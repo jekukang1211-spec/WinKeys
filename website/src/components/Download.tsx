@@ -33,15 +33,19 @@ export default function Download() {
           {[
             {
               title: "Download & Extract",
-              desc: "Download the zip file above and extract it. You\u2019ll get WinKeys.app.",
+              desc: "Download the zip file above and double-click to extract. You\u2019ll get WinKeys.app.",
             },
             {
               title: "Move to Applications",
               desc: "Drag WinKeys.app into your /Applications folder.",
             },
             {
-              title: "Launch & Grant Permission",
-              desc: "Open WinKeys from Launchpad or Spotlight. macOS will ask for Accessibility permission — this is required for keyboard remapping.",
+              title: "Allow in macOS Security",
+              desc: "When you first open WinKeys, macOS will show \u201cWinKeys can\u2019t be opened.\u201d This is normal for unsigned apps. Click \u201cDone\u201d, then go to System Settings > Privacy & Security, scroll down and click \u201cOpen Anyway\u201d next to the WinKeys message. Launch WinKeys again and click \u201cOpen\u201d.",
+            },
+            {
+              title: "Grant Accessibility Permission",
+              desc: "macOS will ask for Accessibility permission \u2014 this is required for keyboard remapping. Go to System Settings > Privacy & Security > Accessibility and enable WinKeys.",
             },
           ].map((step, i) => (
             <li key={i} className="flex gap-4">
