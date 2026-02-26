@@ -56,8 +56,8 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
 
         if !result {
             showAlert(
-                title: "WinKeys 오류",
-                message: "키보드 이벤트 리스너를 시작할 수 없습니다.\n시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 권한을 확인해 주세요."
+                title: L("app.error.title"),
+                message: L("app.error.message")
             )
             return
         }
@@ -79,7 +79,7 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
         alert.messageText = title
         alert.informativeText = message
         alert.alertStyle = .warning
-        alert.addButton(withTitle: "확인")
+        alert.addButton(withTitle: L("alert.confirm"))
         alert.runModal()
     }
 }

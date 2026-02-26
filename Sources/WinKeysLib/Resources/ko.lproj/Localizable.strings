@@ -1,0 +1,141 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "현재 모드: Windows";
+"menu.currentMode.mac" = "현재 모드: Mac";
+"menu.switchWindows" = "Windows 모드로 전환";
+"menu.switchMac" = "Mac 모드로 전환";
+"menu.settings" = "단축키 설정...";
+"menu.launchAtLogin" = "로그인 시 자동 실행";
+"menu.quit" = "WinKeys 종료";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - 단축키 설정";
+"editor.editPrompt" = "변경하려면 편집 모드를 활성화하세요";
+"editor.resetAll" = "전체 기본값";
+"editor.editEnable" = "편집 모드 활성화";
+"editor.editLock" = "편집 모드 잠금";
+"editor.editWarning" = "⚠ 기존 macOS 단축키와 겹치지 않는지 확인 후 변경하세요";
+"editor.column.desc" = "기능";
+"editor.column.input" = "Windows 단축키";
+"editor.column.output" = "Mac 단축키";
+"editor.change" = "변경";
+
+/* Categories */
+"category.clipboard" = "클립보드 / 편집";
+"category.file" = "파일 / 문서";
+"category.browser" = "브라우저 / 탭";
+"category.format" = "서식";
+"category.system" = "시스템";
+"category.screenshot" = "스크린샷";
+"category.navigation" = "내비게이션";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "복사";
+"action.paste" = "붙여넣기";
+"action.cut" = "잘라내기";
+"action.undo" = "실행취소";
+"action.redo" = "다시실행";
+"action.selectAll" = "전체선택";
+"action.save" = "저장";
+"action.new" = "새로 만들기";
+"action.open" = "열기";
+"action.print" = "인쇄";
+"action.find" = "찾기";
+"action.findReplace" = "찾기 및 바꾸기";
+"action.newTab" = "새 탭";
+"action.closeTab" = "탭 닫기";
+"action.restoreTab" = "닫은 탭 복원";
+"action.refresh" = "새로고침";
+"action.refreshF5" = "새로고침 (F5)";
+"action.addressBar" = "주소창";
+"action.bold" = "굵게";
+"action.italic" = "기울임";
+"action.underline" = "밑줄";
+"action.appSwitch" = "앱 전환";
+"action.appQuit" = "앱 종료";
+"action.forceQuit" = "강제 종료";
+"action.lockScreen" = "화면 잠금";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "전체 스크린샷";
+"action.screenshotWindow" = "창 캡처";
+"action.screenshotArea" = "영역 지정";
+"action.screenshotTool" = "스크린샷 도구";
+"action.lineStart" = "줄 처음";
+"action.lineEnd" = "줄 끝";
+"action.wordLeft" = "단어 이동 (좌)";
+"action.wordRight" = "단어 이동 (우)";
+"action.wordDelete" = "단어 삭제";
+"action.rename" = "이름 변경";
+"action.trash" = "휴지통";
+"action.parentFolder" = "상위 폴더";
+"action.fileInfo" = "파일 정보";
+"action.languageToggle" = "언어 전환";
+"action.inputSourceToggle" = "입력 소스 전환";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "전체 기본값 복원";
+"alert.restoreDefaults.message" = "모든 커스텀 단축키 설정을 삭제하고 기본값으로 되돌립니다.";
+"alert.restoreDefaults.confirm" = "기본값 복원";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "취소";
+"alert.confirm" = "확인";
+"alert.set" = "설정";
+"alert.reenter" = "다시 입력";
+"alert.change" = "변경";
+"alert.default" = "기본값";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "[%1$@]의 새 입력 단축키를 눌러주세요\n\n현재: %2$@";
+"alert.recorder.macPrompt" = "[%1$@]의 새 Mac 모드 단축키를 눌러주세요\n\n현재: %2$@";
+"alert.recorder.inputRecording" = "[%1$@]의 새 입력 키를 눌러주세요\n\n입력 중: %2$@";
+"alert.recorder.macRecording" = "[%1$@]의 새 Mac 키를 눌러주세요\n\n입력 중: %2$@";
+"alert.recorder.langRecording" = "[%1$@]의 새 언어 전환 키를 눌러주세요\n\n입력 중: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "입력 단축키 확인";
+"alert.shortcutConfirm.macTitle" = "Mac 단축키 확인";
+"alert.shortcutConfirm.inputMessage" = "[%1$@]의 입력 단축키를\n%2$@\n(으)로 설정하시겠습니까?";
+"alert.shortcutConfirm.macMessage" = "[%1$@]의 Mac 단축키를\n%2$@\n(으)로 설정하시겠습니까?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "언어 전환 키 확인";
+"alert.langKey.message" = "언어 전환 키를\n%@\n(으)로 설정하시겠습니까?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "단축키 오류";
+"alert.shortcutError.message" = "수식키만으로는 단축키를 설정할 수 없습니다.\n일반 키를 하나 이상 포함해 주세요.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "단축키 충돌";
+"alert.conflict.message" = "이 단축키는 이미 [%@]에서 사용 중입니다.\n다른 단축키를 선택해 주세요.";
+"alert.macConflict.title" = "macOS 단축키 충돌";
+"alert.macConflict.message" = "이 단축키는 macOS의 [%@]와 겹칩니다.\n그래도 변경하시겠습니까?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - 언어 전환 키 설정";
+"lang.prompt" = "언어 전환에 사용할 키를 눌러주세요\n(예: 오른쪽 Alt, 오른쪽 Ctrl)";
+"lang.waiting" = "키 입력 대기 중...";
+"lang.skip" = "건너뛰기";
+
+/* App Delegate */
+"app.error.title" = "WinKeys 오류";
+"app.error.message" = "키보드 이벤트 리스너를 시작할 수 없습니다.\n시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 권한을 확인해 주세요.";
+
+/* macOS Shortcut Names (for conflict warnings) */
+"macos.closeWindow" = "창 닫기";
+"macos.hideApp" = "앱 숨기기";
+"macos.minimize" = "최소화";
+"macos.newWindow" = "새 윈도우";
+"macos.saveAs" = "다른 이름으로 저장";
+"macos.hideOtherApps" = "다른 앱 숨기기";
+"macos.inputSourceToggle" = "입력 소스 전환";
+"macos.fullScreen" = "전체 화면";
+"macos.moveToTrash" = "휴지통으로 이동";
+"macos.getInfo" = "정보 가져오기";
+"macos.duplicate" = "선택 영역 복제";
+"macos.export" = "추출/내보내기";
+"macos.addressBarGo" = "주소창/이동";
+"macos.areaScreenshot" = "영역 스크린샷";
+"macos.existingShortcut" = "기존 단축키";

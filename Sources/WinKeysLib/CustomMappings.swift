@@ -216,73 +216,73 @@ final class CustomMappings {
         return mask
     }
 
-    private static let macOSShortcuts: [(CGKeyCode, ModMask, String)] = [
+    private static var macOSShortcuts: [(CGKeyCode, ModMask, String)] { [
         // 기본 편집
-        (KeyCode.c, .cmd, "복사"),
-        (KeyCode.v, .cmd, "붙여넣기"),
-        (KeyCode.x, .cmd, "잘라내기"),
-        (KeyCode.z, .cmd, "실행취소"),
-        (KeyCode.a, .cmd, "전체선택"),
-        (KeyCode.s, .cmd, "저장"),
+        (KeyCode.c, .cmd, L("action.copy")),
+        (KeyCode.v, .cmd, L("action.paste")),
+        (KeyCode.x, .cmd, L("action.cut")),
+        (KeyCode.z, .cmd, L("action.undo")),
+        (KeyCode.a, .cmd, L("action.selectAll")),
+        (KeyCode.s, .cmd, L("action.save")),
         // 앱 제어
-        (KeyCode.q, .cmd, "앱 종료"),
-        (KeyCode.w, .cmd, "창 닫기"),
-        (KeyCode.h, .cmd, "앱 숨기기"),
-        (KeyCode.m, .cmd, "최소화"),
-        (KeyCode.n, .cmd, "새 윈도우"),
+        (KeyCode.q, .cmd, L("action.appQuit")),
+        (KeyCode.w, .cmd, L("macos.closeWindow")),
+        (KeyCode.h, .cmd, L("macos.hideApp")),
+        (KeyCode.m, .cmd, L("macos.minimize")),
+        (KeyCode.n, .cmd, L("macos.newWindow")),
         // 시스템
-        (KeyCode.tab, .cmd, "앱 전환"),
-        (KeyCode.space, .cmd, "Spotlight"),
+        (KeyCode.tab, .cmd, L("action.appSwitch")),
+        (KeyCode.space, .cmd, L("action.spotlight")),
         // 찾기/열기
-        (KeyCode.f, .cmd, "찾기"),
-        (KeyCode.o, .cmd, "열기"),
-        (KeyCode.p, .cmd, "인쇄"),
+        (KeyCode.f, .cmd, L("action.find")),
+        (KeyCode.o, .cmd, L("action.open")),
+        (KeyCode.p, .cmd, L("action.print")),
         // 탭/문서
-        (KeyCode.t, .cmd, "새 탭"),
-        (KeyCode.l, .cmd, "주소창/이동"),
-        (KeyCode.r, .cmd, "새로고침"),
+        (KeyCode.t, .cmd, L("action.newTab")),
+        (KeyCode.l, .cmd, L("macos.addressBarGo")),
+        (KeyCode.r, .cmd, L("action.refresh")),
         // Shift 조합
-        (KeyCode.z, [.cmd, .shift], "다시실행"),
-        (KeyCode.s, [.cmd, .shift], "다른 이름으로 저장"),
-        (KeyCode.num3, [.cmd, .shift], "전체 스크린샷"),
-        (KeyCode.num4, [.cmd, .shift], "영역 스크린샷"),
-        (KeyCode.num5, [.cmd, .shift], "스크린샷 도구"),
+        (KeyCode.z, [.cmd, .shift], L("action.redo")),
+        (KeyCode.s, [.cmd, .shift], L("macos.saveAs")),
+        (KeyCode.num3, [.cmd, .shift], L("action.screenshotFull")),
+        (KeyCode.num4, [.cmd, .shift], L("macos.areaScreenshot")),
+        (KeyCode.num5, [.cmd, .shift], L("action.screenshotTool")),
         // Option 조합
-        (KeyCode.escape, [.cmd, .alt], "강제 종료"),
-        (KeyCode.h, [.cmd, .alt], "다른 앱 숨기기"),
+        (KeyCode.escape, [.cmd, .alt], L("action.forceQuit")),
+        (KeyCode.h, [.cmd, .alt], L("macos.hideOtherApps")),
         // Control 조합
-        (KeyCode.q, [.ctrl, .cmd], "화면 잠금"),
-        (KeyCode.space, .ctrl, "입력 소스 전환"),
+        (KeyCode.q, [.ctrl, .cmd], L("action.lockScreen")),
+        (KeyCode.space, .ctrl, L("macos.inputSourceToggle")),
         // Fn / 기타
-        (KeyCode.f, [.cmd, .ctrl], "전체 화면"),
-        (KeyCode.backspace, .cmd, "휴지통으로 이동"),
-        (KeyCode.delete, .cmd, "휴지통으로 이동"),
-        (KeyCode.i, .cmd, "정보 가져오기"),
-        (KeyCode.d, .cmd, "선택 영역 복제"),
-        (KeyCode.e, .cmd, "추출/내보내기"),
-        (KeyCode.b, .cmd, "굵게"),
-        (KeyCode.i, .cmd, "기울임"),
-        (KeyCode.u, .cmd, "밑줄"),
-    ]
+        (KeyCode.f, [.cmd, .ctrl], L("macos.fullScreen")),
+        (KeyCode.backspace, .cmd, L("macos.moveToTrash")),
+        (KeyCode.delete, .cmd, L("macos.moveToTrash")),
+        (KeyCode.i, .cmd, L("macos.getInfo")),
+        (KeyCode.d, .cmd, L("macos.duplicate")),
+        (KeyCode.e, .cmd, L("macos.export")),
+        (KeyCode.b, .cmd, L("action.bold")),
+        (KeyCode.i, .cmd, L("action.italic")),
+        (KeyCode.u, .cmd, L("action.underline")),
+    ] }
 
     private func keyMappingDescription(_ mapping: KeyMapping) -> String {
         // 기본 매핑의 설명을 키코드로 추정
         let descriptions: [CGKeyCode: [ModMask: String]] = [
-            KeyCode.c: [.ctrl: "복사"],
-            KeyCode.v: [.ctrl: "붙여넣기"],
-            KeyCode.x: [.ctrl: "잘라내기"],
-            KeyCode.z: [.ctrl: "실행취소"],
-            KeyCode.a: [.ctrl: "전체선택"],
-            KeyCode.s: [.ctrl: "저장"],
-            KeyCode.f: [.ctrl: "찾기"],
-            KeyCode.t: [.ctrl: "새 탭"],
-            KeyCode.w: [.ctrl: "탭 닫기"],
-            KeyCode.tab: [.alt: "앱 전환"],
+            KeyCode.c: [.ctrl: L("action.copy")],
+            KeyCode.v: [.ctrl: L("action.paste")],
+            KeyCode.x: [.ctrl: L("action.cut")],
+            KeyCode.z: [.ctrl: L("action.undo")],
+            KeyCode.a: [.ctrl: L("action.selectAll")],
+            KeyCode.s: [.ctrl: L("action.save")],
+            KeyCode.f: [.ctrl: L("action.find")],
+            KeyCode.t: [.ctrl: L("action.newTab")],
+            KeyCode.w: [.ctrl: L("action.closeTab")],
+            KeyCode.tab: [.alt: L("action.appSwitch")],
         ]
         if let modDesc = descriptions[mapping.inputKey], let desc = modDesc[mapping.inputMods] {
             return desc
         }
-        return "기존 단축키"
+        return L("macos.existingShortcut")
     }
 }
 

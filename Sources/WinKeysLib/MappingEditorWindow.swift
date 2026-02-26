@@ -48,7 +48,7 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             backing: .buffered,
             defer: false
         )
-        w.title = "WinKeys - 단축키 설정"
+        w.title = L("editor.windowTitle")
         w.center()
         w.isReleasedWhenClosed = false
         w.delegate = self
@@ -60,19 +60,19 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         let toolbar = NSView(frame: NSRect(x: 0, y: contentView.bounds.height - 44, width: contentView.bounds.width, height: 44))
         toolbar.autoresizingMask = [.width, .minYMargin]
 
-        lockLabel = NSTextField(labelWithString: "변경하려면 편집 모드를 활성화하세요")
+        lockLabel = NSTextField(labelWithString: L("editor.editPrompt"))
         lockLabel.frame = NSRect(x: 12, y: 10, width: 350, height: 24)
         lockLabel.textColor = .secondaryLabelColor
         lockLabel.font = NSFont.systemFont(ofSize: 12)
         toolbar.addSubview(lockLabel)
 
-        let resetAllBtn = NSButton(title: "전체 기본값", target: self, action: #selector(resetAllMappings))
+        let resetAllBtn = NSButton(title: L("editor.resetAll"), target: self, action: #selector(resetAllMappings))
         resetAllBtn.bezelStyle = .rounded
         resetAllBtn.frame = NSRect(x: contentView.bounds.width - 310, y: 8, width: 100, height: 28)
         resetAllBtn.autoresizingMask = [.minXMargin]
         toolbar.addSubview(resetAllBtn)
 
-        editToggleButton = NSButton(title: "편집 모드 활성화", target: self, action: #selector(toggleEditMode))
+        editToggleButton = NSButton(title: L("editor.editEnable"), target: self, action: #selector(toggleEditMode))
         editToggleButton.bezelStyle = .rounded
         editToggleButton.frame = NSRect(x: contentView.bounds.width - 160, y: 8, width: 148, height: 28)
         editToggleButton.autoresizingMask = [.minXMargin]
@@ -90,17 +90,17 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         tableView.rowSizeStyle = .medium
 
         let col1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier("desc"))
-        col1.title = "기능"
+        col1.title = L("editor.column.desc")
         col1.width = 140
         tableView.addTableColumn(col1)
 
         let col2 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier("input"))
-        col2.title = "Windows 단축키"
+        col2.title = L("editor.column.input")
         col2.width = 240
         tableView.addTableColumn(col2)
 
         let col3 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier("output"))
-        col3.title = "Mac 단축키"
+        col3.title = L("editor.column.output")
         col3.width = 240
         tableView.addTableColumn(col3)
 
@@ -124,62 +124,62 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         displayMappings.removeAll()
 
         let categories: [(String, [(String, CGKeyCode, ModMask, CGKeyCode, CGEventFlags, MappingScope)])] = [
-            ("클립보드 / 편집", [
-                ("복사", KeyCode.c, .ctrl, KeyCode.c, cmdFlag, .nonTerminal),
-                ("붙여넣기", KeyCode.v, .ctrl, KeyCode.v, cmdFlag, .nonTerminal),
-                ("잘라내기", KeyCode.x, .ctrl, KeyCode.x, cmdFlag, .nonTerminal),
-                ("실행취소", KeyCode.z, .ctrl, KeyCode.z, cmdFlag, .nonTerminal),
-                ("다시실행", KeyCode.y, .ctrl, KeyCode.z, flags(cmdFlag, shiftFlag), .nonTerminal),
-                ("전체선택", KeyCode.a, .ctrl, KeyCode.a, cmdFlag, .nonTerminal),
+            (L("category.clipboard"), [
+                (L("action.copy"), KeyCode.c, .ctrl, KeyCode.c, cmdFlag, .nonTerminal),
+                (L("action.paste"), KeyCode.v, .ctrl, KeyCode.v, cmdFlag, .nonTerminal),
+                (L("action.cut"), KeyCode.x, .ctrl, KeyCode.x, cmdFlag, .nonTerminal),
+                (L("action.undo"), KeyCode.z, .ctrl, KeyCode.z, cmdFlag, .nonTerminal),
+                (L("action.redo"), KeyCode.y, .ctrl, KeyCode.z, flags(cmdFlag, shiftFlag), .nonTerminal),
+                (L("action.selectAll"), KeyCode.a, .ctrl, KeyCode.a, cmdFlag, .nonTerminal),
             ]),
-            ("파일 / 문서", [
-                ("저장", KeyCode.s, .ctrl, KeyCode.s, cmdFlag, .nonTerminal),
-                ("새로 만들기", KeyCode.n, .ctrl, KeyCode.n, cmdFlag, .nonTerminal),
-                ("열기", KeyCode.o, .ctrl, KeyCode.o, cmdFlag, .nonTerminal),
-                ("인쇄", KeyCode.p, .ctrl, KeyCode.p, cmdFlag, .nonTerminal),
-                ("찾기", KeyCode.f, .ctrl, KeyCode.f, cmdFlag, .nonTerminal),
-                ("찾기 및 바꾸기", KeyCode.h, .ctrl, KeyCode.f, flags(cmdFlag, optFlag), .nonTerminal),
+            (L("category.file"), [
+                (L("action.save"), KeyCode.s, .ctrl, KeyCode.s, cmdFlag, .nonTerminal),
+                (L("action.new"), KeyCode.n, .ctrl, KeyCode.n, cmdFlag, .nonTerminal),
+                (L("action.open"), KeyCode.o, .ctrl, KeyCode.o, cmdFlag, .nonTerminal),
+                (L("action.print"), KeyCode.p, .ctrl, KeyCode.p, cmdFlag, .nonTerminal),
+                (L("action.find"), KeyCode.f, .ctrl, KeyCode.f, cmdFlag, .nonTerminal),
+                (L("action.findReplace"), KeyCode.h, .ctrl, KeyCode.f, flags(cmdFlag, optFlag), .nonTerminal),
             ]),
-            ("브라우저 / 탭", [
-                ("새 탭", KeyCode.t, .ctrl, KeyCode.t, cmdFlag, .nonTerminal),
-                ("탭 닫기", KeyCode.w, .ctrl, KeyCode.w, cmdFlag, .nonTerminal),
-                ("닫은 탭 복원", KeyCode.t, [.ctrl, .shift], KeyCode.t, flags(cmdFlag, shiftFlag), .nonTerminal),
-                ("새로고침", KeyCode.r, .ctrl, KeyCode.r, cmdFlag, .nonTerminal),
-                ("새로고침 (F5)", KeyCode.f5, [], KeyCode.r, cmdFlag, .nonTerminal),
-                ("주소창", KeyCode.l, .ctrl, KeyCode.l, cmdFlag, .nonTerminal),
+            (L("category.browser"), [
+                (L("action.newTab"), KeyCode.t, .ctrl, KeyCode.t, cmdFlag, .nonTerminal),
+                (L("action.closeTab"), KeyCode.w, .ctrl, KeyCode.w, cmdFlag, .nonTerminal),
+                (L("action.restoreTab"), KeyCode.t, [.ctrl, .shift], KeyCode.t, flags(cmdFlag, shiftFlag), .nonTerminal),
+                (L("action.refresh"), KeyCode.r, .ctrl, KeyCode.r, cmdFlag, .nonTerminal),
+                (L("action.refreshF5"), KeyCode.f5, [], KeyCode.r, cmdFlag, .nonTerminal),
+                (L("action.addressBar"), KeyCode.l, .ctrl, KeyCode.l, cmdFlag, .nonTerminal),
             ]),
-            ("서식", [
-                ("굵게", KeyCode.b, .ctrl, KeyCode.b, cmdFlag, .nonTerminal),
-                ("기울임", KeyCode.i, .ctrl, KeyCode.i, cmdFlag, .nonTerminal),
-                ("밑줄", KeyCode.u, .ctrl, KeyCode.u, cmdFlag, .nonTerminal),
+            (L("category.format"), [
+                (L("action.bold"), KeyCode.b, .ctrl, KeyCode.b, cmdFlag, .nonTerminal),
+                (L("action.italic"), KeyCode.i, .ctrl, KeyCode.i, cmdFlag, .nonTerminal),
+                (L("action.underline"), KeyCode.u, .ctrl, KeyCode.u, cmdFlag, .nonTerminal),
             ]),
-            ("시스템", [
-                ("앱 전환", KeyCode.tab, .alt, KeyCode.tab, cmdFlag, .global),
-                ("앱 종료", KeyCode.f4, .alt, KeyCode.q, cmdFlag, .global),
-                ("강제 종료", KeyCode.escape, [.ctrl, .shift], KeyCode.escape, flags(cmdFlag, optFlag), .global),
-                ("화면 잠금", KeyCode.l, .cmd, KeyCode.q, flags(ctrlFlag, cmdFlag), .global),
-                ("Spotlight", KeyCode.r, .cmd, KeyCode.space, cmdFlag, .global),
-                ("Mission Control", KeyCode.tab, .cmd, KeyCode.upArrow, ctrlFlag, .global),
+            (L("category.system"), [
+                (L("action.appSwitch"), KeyCode.tab, .alt, KeyCode.tab, cmdFlag, .global),
+                (L("action.appQuit"), KeyCode.f4, .alt, KeyCode.q, cmdFlag, .global),
+                (L("action.forceQuit"), KeyCode.escape, [.ctrl, .shift], KeyCode.escape, flags(cmdFlag, optFlag), .global),
+                (L("action.lockScreen"), KeyCode.l, .cmd, KeyCode.q, flags(ctrlFlag, cmdFlag), .global),
+                (L("action.spotlight"), KeyCode.r, .cmd, KeyCode.space, cmdFlag, .global),
+                (L("action.missionControl"), KeyCode.tab, .cmd, KeyCode.upArrow, ctrlFlag, .global),
             ]),
-            ("스크린샷", [
-                ("전체 스크린샷", KeyCode.f13, [], KeyCode.num3, flags(cmdFlag, shiftFlag), .global),
-                ("창 캡처", KeyCode.f13, .alt, KeyCode.num4, flags(cmdFlag, shiftFlag), .global),
-                ("영역 지정", KeyCode.s, [.cmd, .shift], KeyCode.num4, flags(cmdFlag, shiftFlag), .global),
-                ("스크린샷 도구", KeyCode.f13, .shift, KeyCode.num5, flags(cmdFlag, shiftFlag), .global),
+            (L("category.screenshot"), [
+                (L("action.screenshotFull"), KeyCode.f13, [], KeyCode.num3, flags(cmdFlag, shiftFlag), .global),
+                (L("action.screenshotWindow"), KeyCode.f13, .alt, KeyCode.num4, flags(cmdFlag, shiftFlag), .global),
+                (L("action.screenshotArea"), KeyCode.s, [.cmd, .shift], KeyCode.num4, flags(cmdFlag, shiftFlag), .global),
+                (L("action.screenshotTool"), KeyCode.f13, .shift, KeyCode.num5, flags(cmdFlag, shiftFlag), .global),
             ]),
-            ("내비게이션", [
-                ("줄 처음", KeyCode.home, [], KeyCode.leftArrow, cmdFlag, .nonTerminal),
-                ("줄 끝", KeyCode.end, [], KeyCode.rightArrow, cmdFlag, .nonTerminal),
-                ("단어 이동 (좌)", KeyCode.leftArrow, .ctrl, KeyCode.leftArrow, optFlag, .nonTerminal),
-                ("단어 이동 (우)", KeyCode.rightArrow, .ctrl, KeyCode.rightArrow, optFlag, .nonTerminal),
-                ("단어 삭제", KeyCode.backspace, .ctrl, KeyCode.backspace, optFlag, .nonTerminal),
+            (L("category.navigation"), [
+                (L("action.lineStart"), KeyCode.home, [], KeyCode.leftArrow, cmdFlag, .nonTerminal),
+                (L("action.lineEnd"), KeyCode.end, [], KeyCode.rightArrow, cmdFlag, .nonTerminal),
+                (L("action.wordLeft"), KeyCode.leftArrow, .ctrl, KeyCode.leftArrow, optFlag, .nonTerminal),
+                (L("action.wordRight"), KeyCode.rightArrow, .ctrl, KeyCode.rightArrow, optFlag, .nonTerminal),
+                (L("action.wordDelete"), KeyCode.backspace, .ctrl, KeyCode.backspace, optFlag, .nonTerminal),
             ]),
-            ("Finder", [
-                ("이름 변경", KeyCode.f2, [], KeyCode.returnKey, noFlags, .finderOnly),
-                ("열기", KeyCode.returnKey, [], KeyCode.o, cmdFlag, .finderOnly),
-                ("휴지통", KeyCode.delete, [], KeyCode.backspace, cmdFlag, .finderOnly),
-                ("상위 폴더", KeyCode.backspace, [], KeyCode.upArrow, cmdFlag, .finderOnly),
-                ("파일 정보", KeyCode.returnKey, .alt, KeyCode.i, cmdFlag, .finderOnly),
+            (L("category.finder"), [
+                (L("action.rename"), KeyCode.f2, [], KeyCode.returnKey, noFlags, .finderOnly),
+                (L("action.open"), KeyCode.returnKey, [], KeyCode.o, cmdFlag, .finderOnly),
+                (L("action.trash"), KeyCode.delete, [], KeyCode.backspace, cmdFlag, .finderOnly),
+                (L("action.parentFolder"), KeyCode.backspace, [], KeyCode.upArrow, cmdFlag, .finderOnly),
+                (L("action.fileInfo"), KeyCode.returnKey, .alt, KeyCode.i, cmdFlag, .finderOnly),
             ]),
         ]
 
@@ -255,15 +255,15 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
                 ))
             }
             // 시스템 카테고리 끝에 언어 전환 키 추가
-            if category == "시스템" {
+            if category == L("category.system") {
                 let langKeyCode = Preferences.shared.languageKeyCode ?? KeyCode.rightOption
                 let langKeyName = keyCodeName(langKeyCode)
                 let isCustom = Preferences.shared.isLanguageKeyConfigured
                 let langInputStr = langKeyName + (isCustom ? " ✎" : "")
 
                 displayMappings.append(DisplayMapping(
-                    category: category, description: "언어 전환",
-                    inputShortcut: langInputStr, outputShortcut: "입력 소스 전환",
+                    category: category, description: L("action.languageToggle"),
+                    inputShortcut: langInputStr, outputShortcut: L("action.inputSourceToggle"),
                     inputKey: KeyCode.rightOption, inputMods: [],
                     outputKey: 0, outputFlags: noFlags,
                     scope: .global, isHeader: false, isLanguageToggle: true
@@ -276,11 +276,11 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
 
     @objc private func resetAllMappings() {
         let alert = NSAlert()
-        alert.messageText = "전체 기본값 복원"
-        alert.informativeText = "모든 커스텀 단축키 설정을 삭제하고 기본값으로 되돌립니다."
+        alert.messageText = L("alert.restoreDefaults.title")
+        alert.informativeText = L("alert.restoreDefaults.message")
         alert.alertStyle = .warning
-        alert.addButton(withTitle: "기본값 복원")
-        alert.addButton(withTitle: "취소")
+        alert.addButton(withTitle: L("alert.restoreDefaults.confirm"))
+        alert.addButton(withTitle: L("alert.cancel"))
         guard alert.runModal() == .alertFirstButtonReturn else { return }
 
         for entry in CustomMappings.shared.allEntries() {
@@ -293,12 +293,12 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
 
     @objc private func toggleEditMode() {
         editEnabled.toggle()
-        editToggleButton.title = editEnabled ? "편집 모드 잠금" : "편집 모드 활성화"
+        editToggleButton.title = editEnabled ? L("editor.editLock") : L("editor.editEnable")
         if editEnabled {
-            lockLabel.stringValue = "⚠ 기존 macOS 단축키와 겹치지 않는지 확인 후 변경하세요"
+            lockLabel.stringValue = L("editor.editWarning")
             lockLabel.textColor = .systemOrange
         } else {
-            lockLabel.stringValue = "변경하려면 편집 모드를 활성화하세요"
+            lockLabel.stringValue = L("editor.editPrompt")
             lockLabel.textColor = .secondaryLabelColor
         }
         tableView.reloadData()
@@ -351,7 +351,7 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         // 이벤트 탭 일시 중지
         EventTapManager.shared.stop()
 
-        let modeTitle = mode == .input ? "입력 단축키" : "Mac 단축키"
+        let modeTitle = mode == .input ? L("alert.shortcutConfirm.inputTitle") : L("alert.shortcutConfirm.macTitle")
         let currentStr = mode == .input ? mapping.inputShortcut : mapping.outputShortcut
 
         let panel = NSPanel(
@@ -360,29 +360,29 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             backing: .buffered,
             defer: false
         )
-        panel.title = "\(modeTitle) 변경: \(mapping.description)"
+        panel.title = "\(modeTitle): \(mapping.description)"
         panel.level = .floating
         panel.center()
         panel.isReleasedWhenClosed = false
 
         let contentView = NSView(frame: panel.contentView!.bounds)
 
-        let prompt = mode == .input
-            ? "[\(mapping.description)]의 새 입력 단축키를 눌러주세요"
-            : "[\(mapping.description)]의 새 Mac 모드 단축키를 눌러주세요"
-        let label = NSTextField(wrappingLabelWithString: "\(prompt)\n\n현재: \(currentStr)")
+        let labelText = mode == .input
+            ? L("alert.recorder.inputPrompt", mapping.description, currentStr)
+            : L("alert.recorder.macPrompt", mapping.description, currentStr)
+        let label = NSTextField(wrappingLabelWithString: labelText)
         label.frame = NSRect(x: 30, y: 90, width: 340, height: 80)
         label.alignment = .center
         label.font = NSFont.systemFont(ofSize: 14)
         contentView.addSubview(label)
         recorderLabel = label
 
-        let cancelBtn = NSButton(title: "취소", target: self, action: #selector(recorderCancel))
+        let cancelBtn = NSButton(title: L("alert.cancel"), target: self, action: #selector(recorderCancel))
         cancelBtn.bezelStyle = .rounded
         cancelBtn.frame = NSRect(x: 100, y: 15, width: 80, height: 28)
         contentView.addSubview(cancelBtn)
 
-        let resetBtn = NSButton(title: "기본값", target: self, action: #selector(recorderReset))
+        let resetBtn = NSButton(title: L("alert.default"), target: self, action: #selector(recorderReset))
         resetBtn.bezelStyle = .rounded
         resetBtn.frame = NSRect(x: 220, y: 15, width: 80, height: 28)
         contentView.addSubview(resetBtn)
@@ -512,12 +512,12 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         let keyName = keyCodeName(keyCode)
 
         let alert = NSAlert()
-        alert.messageText = "언어 전환 키 확인"
-        alert.informativeText = "언어 전환 키를\n\(keyName)\n(으)로 설정하시겠습니까?"
+        alert.messageText = L("alert.langKey.title")
+        alert.informativeText = L("alert.langKey.message", keyName)
         alert.alertStyle = .informational
-        alert.addButton(withTitle: "설정")
-        alert.addButton(withTitle: "다시 입력")
-        alert.addButton(withTitle: "취소")
+        alert.addButton(withTitle: L("alert.set"))
+        alert.addButton(withTitle: L("alert.reenter"))
+        alert.addButton(withTitle: L("alert.cancel"))
 
         let response = alert.runModal()
         if response == .alertSecondButtonReturn {
@@ -550,13 +550,14 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             parts.append(keyCodeName(kc))
         }
         let current = parts.isEmpty ? "..." : parts.joined(separator: "+")
-        let modeLabel: String
         switch recordingMode {
-        case .input: modeLabel = "입력"
-        case .macInput: modeLabel = "Mac"
-        case .languageKey: modeLabel = "언어 전환"
+        case .input:
+            label.stringValue = L("alert.recorder.inputRecording", mapping.description, current)
+        case .macInput:
+            label.stringValue = L("alert.recorder.macRecording", mapping.description, current)
+        case .languageKey:
+            label.stringValue = L("alert.recorder.langRecording", mapping.description, current)
         }
-        label.stringValue = "[\(mapping.description)]의 새 \(modeLabel) 키를 눌러주세요\n\n입력 중: \(current)"
     }
 
     private func finalizeRecording() {
@@ -566,10 +567,10 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
 
         if nonModKeys.isEmpty {
             let alert = NSAlert()
-            alert.messageText = "단축키 오류"
-            alert.informativeText = "수식키만으로는 단축키를 설정할 수 없습니다.\n일반 키를 하나 이상 포함해 주세요."
+            alert.messageText = L("alert.shortcutError.title")
+            alert.informativeText = L("alert.shortcutError.message")
             alert.alertStyle = .warning
-            alert.addButton(withTitle: "확인")
+            alert.addButton(withTitle: L("alert.confirm"))
             alert.runModal()
             resetRecorderState()
             return
@@ -598,14 +599,17 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             displayName = shortcutName(keyCode: triggerKey, mods: mods, heldKeys: heldKeys)
         }
 
-        let modeLabel = recordingMode == .input ? "입력" : "Mac"
         let alert = NSAlert()
-        alert.messageText = "\(modeLabel) 단축키 확인"
-        alert.informativeText = "[\(mapping.description)]의 \(modeLabel) 단축키를\n\(displayName)\n(으)로 설정하시겠습니까?"
+        alert.messageText = recordingMode == .input
+            ? L("alert.shortcutConfirm.inputTitle")
+            : L("alert.shortcutConfirm.macTitle")
+        alert.informativeText = recordingMode == .input
+            ? L("alert.shortcutConfirm.inputMessage", mapping.description, displayName)
+            : L("alert.shortcutConfirm.macMessage", mapping.description, displayName)
         alert.alertStyle = .informational
-        alert.addButton(withTitle: "설정")
-        alert.addButton(withTitle: "다시 입력")
-        alert.addButton(withTitle: "취소")
+        alert.addButton(withTitle: L("alert.set"))
+        alert.addButton(withTitle: L("alert.reenter"))
+        alert.addButton(withTitle: L("alert.cancel"))
 
         let response = alert.runModal()
         if response == .alertSecondButtonReturn {
@@ -647,11 +651,11 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         // macOS 충돌 검사
         if let macConflict = CustomMappings.shared.findMacOSConflict(keyCode: UInt16(keyCode), mods: mods.rawValue) {
             let alert = NSAlert()
-            alert.messageText = "macOS 단축키 충돌"
-            alert.informativeText = "이 단축키는 macOS의 [\(macConflict)]와 겹칩니다.\n그래도 변경하시겠습니까?"
+            alert.messageText = L("alert.macConflict.title")
+            alert.informativeText = L("alert.macConflict.message", macConflict)
             alert.alertStyle = .warning
-            alert.addButton(withTitle: "변경")
-            alert.addButton(withTitle: "취소")
+            alert.addButton(withTitle: L("alert.change"))
+            alert.addButton(withTitle: L("alert.cancel"))
             guard alert.runModal() == .alertFirstButtonReturn else {
                 resetRecorderState()
                 return
@@ -700,11 +704,11 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
         // macOS 기본 단축키 충돌 경고
         if let macConflict = CustomMappings.shared.findMacOSConflict(keyCode: UInt16(keyCode), mods: mods.rawValue) {
             let alert = NSAlert()
-            alert.messageText = "macOS 단축키 충돌"
-            alert.informativeText = "이 단축키는 macOS의 [\(macConflict)]와 겹칩니다.\n그래도 변경하시겠습니까?"
+            alert.messageText = L("alert.macConflict.title")
+            alert.informativeText = L("alert.macConflict.message", macConflict)
             alert.alertStyle = .warning
-            alert.addButton(withTitle: "변경")
-            alert.addButton(withTitle: "취소")
+            alert.addButton(withTitle: L("alert.change"))
+            alert.addButton(withTitle: L("alert.cancel"))
             guard alert.runModal() == .alertFirstButtonReturn else {
                 resetRecorderState()
                 return
@@ -760,10 +764,10 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
 
     private func showConflictAlert(_ conflict: String) {
         let alert = NSAlert()
-        alert.messageText = "단축키 충돌"
-        alert.informativeText = "이 단축키는 이미 [\(conflict)]에서 사용 중입니다.\n다른 단축키를 선택해 주세요."
+        alert.messageText = L("alert.conflict.title")
+        alert.informativeText = L("alert.conflict.message", conflict)
         alert.alertStyle = .warning
-        alert.addButton(withTitle: "확인")
+        alert.addButton(withTitle: L("alert.confirm"))
         alert.runModal()
         resetRecorderState()
     }
@@ -890,7 +894,7 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             if editEnabled {
                 return makeCellWithButton(
                     text: mapping.inputShortcut,
-                    buttonTitle: "변경",
+                    buttonTitle: L("editor.change"),
                     action: #selector(editInputMapping(_:)),
                     row: row,
                     columnWidth: 240
@@ -904,7 +908,7 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
             if editEnabled && !mapping.isLanguageToggle {
                 return makeCellWithButton(
                     text: mapping.outputShortcut,
-                    buttonTitle: "변경",
+                    buttonTitle: L("editor.change"),
                     action: #selector(editOutputMapping(_:)),
                     row: row,
                     columnWidth: 240

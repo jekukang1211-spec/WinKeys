@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "WinKeys",
+    defaultLocalization: "en",
     platforms: [
         .macOS(.v13)
     ],
@@ -13,6 +14,7 @@ let package = Package(
         .target(
             name: "WinKeysLib",
             path: "Sources/WinKeysLib",
+            resources: [.process("Resources")],
             swiftSettings: [.swiftLanguageMode(.v5)],
             linkerSettings: [
                 .linkedFramework("AppKit"),

@@ -1,0 +1,141 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Current Mode: Windows";
+"menu.currentMode.mac" = "Current Mode: Mac";
+"menu.switchWindows" = "Switch to Windows Mode";
+"menu.switchMac" = "Switch to Mac Mode";
+"menu.settings" = "Shortcut Settings...";
+"menu.launchAtLogin" = "Launch at Login";
+"menu.quit" = "Quit WinKeys";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Shortcut Settings";
+"editor.editPrompt" = "Enable Edit Mode to make changes";
+"editor.resetAll" = "Reset All";
+"editor.editEnable" = "Enable Edit Mode";
+"editor.editLock" = "Lock Edit Mode";
+"editor.editWarning" = "⚠ Verify shortcuts don't conflict with existing macOS shortcuts";
+"editor.column.desc" = "Function";
+"editor.column.input" = "Windows Shortcut";
+"editor.column.output" = "Mac Shortcut";
+"editor.change" = "Change";
+
+/* Categories */
+"category.clipboard" = "Clipboard / Edit";
+"category.file" = "File / Document";
+"category.browser" = "Browser / Tabs";
+"category.format" = "Formatting";
+"category.system" = "System";
+"category.screenshot" = "Screenshot";
+"category.navigation" = "Navigation";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Copy";
+"action.paste" = "Paste";
+"action.cut" = "Cut";
+"action.undo" = "Undo";
+"action.redo" = "Redo";
+"action.selectAll" = "Select All";
+"action.save" = "Save";
+"action.new" = "New";
+"action.open" = "Open";
+"action.print" = "Print";
+"action.find" = "Find";
+"action.findReplace" = "Find & Replace";
+"action.newTab" = "New Tab";
+"action.closeTab" = "Close Tab";
+"action.restoreTab" = "Restore Closed Tab";
+"action.refresh" = "Refresh";
+"action.refreshF5" = "Refresh (F5)";
+"action.addressBar" = "Address Bar";
+"action.bold" = "Bold";
+"action.italic" = "Italic";
+"action.underline" = "Underline";
+"action.appSwitch" = "App Switcher";
+"action.appQuit" = "Quit App";
+"action.forceQuit" = "Force Quit";
+"action.lockScreen" = "Lock Screen";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Full Screenshot";
+"action.screenshotWindow" = "Window Capture";
+"action.screenshotArea" = "Area Selection";
+"action.screenshotTool" = "Screenshot Tool";
+"action.lineStart" = "Line Start";
+"action.lineEnd" = "Line End";
+"action.wordLeft" = "Word Left";
+"action.wordRight" = "Word Right";
+"action.wordDelete" = "Delete Word";
+"action.rename" = "Rename";
+"action.trash" = "Trash";
+"action.parentFolder" = "Parent Folder";
+"action.fileInfo" = "File Info";
+"action.languageToggle" = "Language Toggle";
+"action.inputSourceToggle" = "Input Source Toggle";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Restore All Defaults";
+"alert.restoreDefaults.message" = "Delete all custom shortcut settings and restore defaults.";
+"alert.restoreDefaults.confirm" = "Restore Defaults";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Cancel";
+"alert.confirm" = "OK";
+"alert.set" = "Set";
+"alert.reenter" = "Re-enter";
+"alert.change" = "Change";
+"alert.default" = "Default";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Press new input shortcut for [%1$@]\n\nCurrent: %2$@";
+"alert.recorder.macPrompt" = "Press new Mac mode shortcut for [%1$@]\n\nCurrent: %2$@";
+"alert.recorder.inputRecording" = "Press new input key for [%1$@]\n\nRecording: %2$@";
+"alert.recorder.macRecording" = "Press new Mac key for [%1$@]\n\nRecording: %2$@";
+"alert.recorder.langRecording" = "Press new language toggle key for [%1$@]\n\nRecording: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Confirm Input Shortcut";
+"alert.shortcutConfirm.macTitle" = "Confirm Mac Shortcut";
+"alert.shortcutConfirm.inputMessage" = "Set input shortcut for [%1$@] to\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "Set Mac shortcut for [%1$@] to\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Confirm Language Key";
+"alert.langKey.message" = "Set the language toggle key to\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Shortcut Error";
+"alert.shortcutError.message" = "Cannot set a shortcut with only modifier keys.\nPlease include at least one regular key.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Shortcut Conflict";
+"alert.conflict.message" = "This shortcut is already used by [%@].\nPlease choose a different shortcut.";
+"alert.macConflict.title" = "macOS Shortcut Conflict";
+"alert.macConflict.message" = "This shortcut conflicts with macOS [%@].\nChange anyway?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Language Key Setup";
+"lang.prompt" = "Press the key for language toggle\n(e.g., Right Alt, Right Ctrl)";
+"lang.waiting" = "Waiting for key input...";
+"lang.skip" = "Skip";
+
+/* App Delegate */
+"app.error.title" = "WinKeys Error";
+"app.error.message" = "Cannot start keyboard event listener.\nPlease check permissions in System Settings > Privacy & Security > Accessibility.";
+
+/* macOS Shortcut Names (for conflict warnings) */
+"macos.closeWindow" = "Close Window";
+"macos.hideApp" = "Hide App";
+"macos.minimize" = "Minimize";
+"macos.newWindow" = "New Window";
+"macos.saveAs" = "Save As";
+"macos.hideOtherApps" = "Hide Other Apps";
+"macos.inputSourceToggle" = "Input Source Toggle";
+"macos.fullScreen" = "Full Screen";
+"macos.moveToTrash" = "Move to Trash";
+"macos.getInfo" = "Get Info";
+"macos.duplicate" = "Duplicate";
+"macos.export" = "Export";
+"macos.addressBarGo" = "Address Bar / Go";
+"macos.areaScreenshot" = "Area Screenshot";
+"macos.existingShortcut" = "Existing Shortcut";

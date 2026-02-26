@@ -17,26 +17,26 @@ final class LanguageKeyRecorder {
             backing: .buffered,
             defer: false
         )
-        panel.title = "WinKeys - 언어 전환 키 설정"
+        panel.title = L("lang.windowTitle")
         panel.level = .floating
         panel.center()
 
         let contentView = NSView(frame: panel.contentView!.bounds)
 
-        let label = NSTextField(wrappingLabelWithString: "언어 전환에 사용할 키를 눌러주세요\n(예: 오른쪽 Alt, 오른쪽 Ctrl)")
+        let label = NSTextField(wrappingLabelWithString: L("lang.prompt"))
         label.frame = NSRect(x: 30, y: 90, width: 340, height: 60)
         label.alignment = .center
         label.font = NSFont.systemFont(ofSize: 15)
         contentView.addSubview(label)
 
-        let sublabel = NSTextField(wrappingLabelWithString: "키 입력 대기 중...")
+        let sublabel = NSTextField(wrappingLabelWithString: L("lang.waiting"))
         sublabel.frame = NSRect(x: 30, y: 50, width: 340, height: 30)
         sublabel.alignment = .center
         sublabel.font = NSFont.systemFont(ofSize: 12)
         sublabel.textColor = .secondaryLabelColor
         contentView.addSubview(sublabel)
 
-        let skipButton = NSButton(title: "건너뛰기", target: nil, action: nil)
+        let skipButton = NSButton(title: L("lang.skip"), target: nil, action: nil)
         skipButton.frame = NSRect(x: 150, y: 10, width: 100, height: 32)
         skipButton.target = self
         skipButton.action = #selector(skipPressed)

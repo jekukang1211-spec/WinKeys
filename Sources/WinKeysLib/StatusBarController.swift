@@ -29,7 +29,7 @@ final class StatusBarController {
         let menu = NSMenu()
 
         let modeItem = NSMenuItem(
-            title: Preferences.shared.isWindowsMode ? "현재 모드: Windows" : "현재 모드: Mac",
+            title: Preferences.shared.isWindowsMode ? L("menu.currentMode.windows") : L("menu.currentMode.mac"),
             action: nil,
             keyEquivalent: ""
         )
@@ -39,7 +39,7 @@ final class StatusBarController {
         menu.addItem(NSMenuItem.separator())
 
         let winModeItem = NSMenuItem(
-            title: "Windows 모드로 전환",
+            title: L("menu.switchWindows"),
             action: #selector(switchToWindowsMode),
             keyEquivalent: ""
         )
@@ -48,7 +48,7 @@ final class StatusBarController {
         menu.addItem(winModeItem)
 
         let macModeItem = NSMenuItem(
-            title: "Mac 모드로 전환",
+            title: L("menu.switchMac"),
             action: #selector(switchToMacMode),
             keyEquivalent: ""
         )
@@ -59,7 +59,7 @@ final class StatusBarController {
         menu.addItem(NSMenuItem.separator())
 
         let mappingItem = NSMenuItem(
-            title: "단축키 설정...",
+            title: L("menu.settings"),
             action: #selector(openMappingEditor),
             keyEquivalent: ""
         )
@@ -69,7 +69,7 @@ final class StatusBarController {
         menu.addItem(NSMenuItem.separator())
 
         let loginItem = NSMenuItem(
-            title: "로그인 시 자동 실행",
+            title: L("menu.launchAtLogin"),
             action: #selector(toggleLaunchAtLogin),
             keyEquivalent: ""
         )
@@ -80,7 +80,7 @@ final class StatusBarController {
         menu.addItem(NSMenuItem.separator())
 
         let quitItem = NSMenuItem(
-            title: "WinKeys 종료",
+            title: L("menu.quit"),
             action: #selector(quitApp),
             keyEquivalent: "q"
         )

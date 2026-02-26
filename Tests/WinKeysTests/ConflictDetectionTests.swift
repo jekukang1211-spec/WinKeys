@@ -65,8 +65,8 @@ struct ConflictDetectionTests {
             inputKeyCode: KeyCode.c, inputMods: ModMask.ctrl.rawValue, excludeId: nil
         )
         #expect(conflict != nil)
-        // "복사"라는 설명이어야 함
-        #expect(conflict == "복사")
+        // L("action.copy") — "Copy" in English locale
+        #expect(conflict == "Copy")
     }
 
     // MARK: - findMacConflict(): Mac-Mac 커스텀 중복 차단
@@ -137,10 +137,10 @@ struct ConflictDetectionTests {
 
     @Test("findMacOSConflict - macOS 시스템 단축키 감지")
     func findMacOSConflictDetectsSystemShortcut() {
-        // Cmd+C는 macOS 시스템 단축키 "복사"
+        // Cmd+C는 macOS 시스템 단축키 "복사" (L("action.copy") = "Copy" in English locale)
         let conflict = cm.findMacOSConflict(keyCode: KeyCode.c, mods: ModMask.cmd.rawValue)
         #expect(conflict != nil)
-        #expect(conflict == "복사")
+        #expect(conflict == "Copy")
     }
 
     // MARK: - findMacOSConflict(): 목록에 없는 단축키는 nil
