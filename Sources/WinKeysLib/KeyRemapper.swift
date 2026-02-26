@@ -423,4 +423,5 @@ final class KeyRemapper {
 
 extension Notification.Name {
     static let modeChanged = Notification.Name("WinKeysModeChanged")
+    static let languageChanged = Notification.Name("WinKeysLanguageChanged")
 }

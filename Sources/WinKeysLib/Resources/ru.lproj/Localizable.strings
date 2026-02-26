@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Текущий режим: Windows";
+"menu.currentMode.mac" = "Текущий режим: Mac";
+"menu.switchWindows" = "Переключить на режим Windows";
+"menu.switchMac" = "Переключить на режим Mac";
+"menu.settings" = "Настройки горячих клавиш...";
+"menu.launchAtLogin" = "Запускать при входе";
+"menu.quit" = "Завершить WinKeys";
+"menu.language" = "Язык";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Настройки горячих клавиш";
+"editor.editPrompt" = "Включите режим редактирования для внесения изменений";
+"editor.resetAll" = "Сбросить всё";
+"editor.editEnable" = "Включить режим редактирования";
+"editor.editLock" = "Заблокировать режим редактирования";
+"editor.editWarning" = "⚠ Убедитесь, что клавиши не конфликтуют с существующими сочетаниями macOS";
+"editor.column.desc" = "Функция";
+"editor.column.input" = "Сочетание Windows";
+"editor.column.output" = "Сочетание Mac";
+"editor.change" = "Изменить";
+
+/* Categories */
+"category.clipboard" = "Буфер обмена / Редактирование";
+"category.file" = "Файл / Документ";
+"category.browser" = "Браузер / Вкладки";
+"category.format" = "Форматирование";
+"category.system" = "Система";
+"category.screenshot" = "Снимок экрана";
+"category.navigation" = "Навигация";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Копировать";
+"action.paste" = "Вставить";
+"action.cut" = "Вырезать";
+"action.undo" = "Отменить";
+"action.redo" = "Повторить";
+"action.selectAll" = "Выделить всё";
+"action.save" = "Сохранить";
+"action.new" = "Создать";
+"action.open" = "Открыть";
+"action.print" = "Печать";
+"action.find" = "Найти";
+"action.findReplace" = "Найти и заменить";
+"action.newTab" = "Новая вкладка";
+"action.closeTab" = "Закрыть вкладку";
+"action.restoreTab" = "Восстановить закрытую вкладку";
+"action.refresh" = "Обновить";
+"action.refreshF5" = "Обновить (F5)";
+"action.addressBar" = "Адресная строка";
+"action.bold" = "Жирный";
+"action.italic" = "Курсив";
+"action.underline" = "Подчёркнутый";
+"action.appSwitch" = "Переключение приложений";
+"action.appQuit" = "Закрыть приложение";
+"action.forceQuit" = "Принудительное завершение";
+"action.lockScreen" = "Заблокировать экран";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Снимок всего экрана";
+"action.screenshotWindow" = "Снимок окна";
+"action.screenshotArea" = "Выбор области";
+"action.screenshotTool" = "Инструмент снимков";
+"action.lineStart" = "Начало строки";
+"action.lineEnd" = "Конец строки";
+"action.wordLeft" = "Слово влево";
+"action.wordRight" = "Слово вправо";
+"action.wordDelete" = "Удалить слово";
+"action.rename" = "Переименовать";
+"action.trash" = "Корзина";
+"action.parentFolder" = "Родительская папка";
+"action.fileInfo" = "Свойства файла";
+"action.languageToggle" = "Переключить язык";
+"action.inputSourceToggle" = "Переключить источник ввода";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Восстановить настройки по умолчанию";
+"alert.restoreDefaults.message" = "Удалить все пользовательские настройки клавиш и восстановить значения по умолчанию.";
+"alert.restoreDefaults.confirm" = "Восстановить";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Отмена";
+"alert.confirm" = "ОК";
+"alert.set" = "Установить";
+"alert.reenter" = "Ввести заново";
+"alert.change" = "Изменить";
+"alert.default" = "По умолчанию";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Нажмите новое сочетание ввода для [%1$@]\n\nТекущее: %2$@";
+"alert.recorder.macPrompt" = "Нажмите новое сочетание Mac для [%1$@]\n\nТекущее: %2$@";
+"alert.recorder.inputRecording" = "Нажмите новую клавишу ввода для [%1$@]\n\nЗапись: %2$@";
+"alert.recorder.macRecording" = "Нажмите новую клавишу Mac для [%1$@]\n\nЗапись: %2$@";
+"alert.recorder.langRecording" = "Нажмите новую клавишу языка для [%1$@]\n\nЗапись: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Подтвердить сочетание ввода";
+"alert.shortcutConfirm.macTitle" = "Подтвердить сочетание Mac";
+"alert.shortcutConfirm.inputMessage" = "Установить сочетание ввода [%1$@] как\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "Установить сочетание Mac [%1$@] как\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Подтвердить клавишу языка";
+"alert.langKey.message" = "Установить клавишу переключения языка как\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Ошибка сочетания клавиш";
+"alert.shortcutError.message" = "Нельзя назначить сочетание только из клавиш-модификаторов.\nДобавьте хотя бы одну обычную клавишу.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Конфликт сочетаний клавиш";
+"alert.conflict.message" = "Это сочетание уже используется [%@].\nВыберите другое сочетание.";
+"alert.macConflict.title" = "Конфликт с сочетанием macOS";
+"alert.macConflict.message" = "Это сочетание конфликтует с [%@] macOS.\nВсё равно изменить?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Настройка клавиши языка";
+"lang.prompt" = "Нажмите клавишу для переключения языка\n(например: правый Alt, правый Ctrl)";
+"lang.waiting" = "Ожидание ввода...";
+"lang.skip" = "Пропустить";
+
+/* App Delegate */
+"app.error.title" = "Ошибка WinKeys";
+"app.error.message" = "Не удалось запустить прослушиватель событий клавиатуры.\nПроверьте разрешения в Системных настройках > Конфиденциальность и безопасность > Универсальный доступ.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Закрыть окно";
+"macos.hideApp" = "Скрыть приложение";
+"macos.minimize" = "Свернуть";
+"macos.newWindow" = "Новое окно";
+"macos.saveAs" = "Сохранить как";
+"macos.hideOtherApps" = "Скрыть остальные";
+"macos.inputSourceToggle" = "Переключить источник ввода";
+"macos.fullScreen" = "Полный экран";
+"macos.moveToTrash" = "Переместить в Корзину";
+"macos.getInfo" = "Свойства";
+"macos.duplicate" = "Дублировать";
+"macos.export" = "Экспортировать";
+"macos.addressBarGo" = "Адресная строка / Перейти";
+"macos.areaScreenshot" = "Снимок области";
+"macos.existingShortcut" = "Существующее сочетание";

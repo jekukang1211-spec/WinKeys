@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Mevcut mod: Windows";
+"menu.currentMode.mac" = "Mevcut mod: Mac";
+"menu.switchWindows" = "Windows moduna geç";
+"menu.switchMac" = "Mac moduna geç";
+"menu.settings" = "Kısayol ayarları...";
+"menu.launchAtLogin" = "Girişte başlat";
+"menu.quit" = "WinKeys'ten çık";
+"menu.language" = "Dil";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Kısayol ayarları";
+"editor.editPrompt" = "Değişiklik yapmak için düzenleme modunu etkinleştirin";
+"editor.resetAll" = "Tümünü sıfırla";
+"editor.editEnable" = "Düzenleme modunu etkinleştir";
+"editor.editLock" = "Düzenleme modunu kilitle";
+"editor.editWarning" = "⚠ Kısayolların mevcut macOS kısayollarıyla çakışmadığını doğrulayın";
+"editor.column.desc" = "İşlev";
+"editor.column.input" = "Windows kısayolu";
+"editor.column.output" = "Mac kısayolu";
+"editor.change" = "Değiştir";
+
+/* Categories */
+"category.clipboard" = "Pano / Düzenleme";
+"category.file" = "Dosya / Belge";
+"category.browser" = "Tarayıcı / Sekmeler";
+"category.format" = "Biçimlendirme";
+"category.system" = "Sistem";
+"category.screenshot" = "Ekran görüntüsü";
+"category.navigation" = "Gezinme";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Kopyala";
+"action.paste" = "Yapıştır";
+"action.cut" = "Kes";
+"action.undo" = "Geri al";
+"action.redo" = "Yinele";
+"action.selectAll" = "Tümünü seç";
+"action.save" = "Kaydet";
+"action.new" = "Yeni";
+"action.open" = "Aç";
+"action.print" = "Yazdır";
+"action.find" = "Bul";
+"action.findReplace" = "Bul ve değiştir";
+"action.newTab" = "Yeni sekme";
+"action.closeTab" = "Sekmeyi kapat";
+"action.restoreTab" = "Kapatılan sekmeyi geri yükle";
+"action.refresh" = "Yenile";
+"action.refreshF5" = "Yenile (F5)";
+"action.addressBar" = "Adres çubuğu";
+"action.bold" = "Kalın";
+"action.italic" = "İtalik";
+"action.underline" = "Altı çizili";
+"action.appSwitch" = "Uygulama değiştir";
+"action.appQuit" = "Uygulamadan çık";
+"action.forceQuit" = "Zorla çık";
+"action.lockScreen" = "Ekranı kilitle";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Tam ekran görüntüsü";
+"action.screenshotWindow" = "Pencere yakala";
+"action.screenshotArea" = "Alan seçimi";
+"action.screenshotTool" = "Ekran görüntüsü aracı";
+"action.lineStart" = "Satır başı";
+"action.lineEnd" = "Satır sonu";
+"action.wordLeft" = "Kelime sola";
+"action.wordRight" = "Kelime sağa";
+"action.wordDelete" = "Kelime sil";
+"action.rename" = "Yeniden adlandır";
+"action.trash" = "Çöp kutusu";
+"action.parentFolder" = "Üst klasör";
+"action.fileInfo" = "Dosya bilgisi";
+"action.languageToggle" = "Dil değiştir";
+"action.inputSourceToggle" = "Giriş kaynağını değiştir";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Tüm varsayılanları geri yükle";
+"alert.restoreDefaults.message" = "Tüm özel kısayol ayarlarını silip varsayılanlara dön.";
+"alert.restoreDefaults.confirm" = "Geri yükle";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "İptal";
+"alert.confirm" = "Tamam";
+"alert.set" = "Ayarla";
+"alert.reenter" = "Tekrar gir";
+"alert.change" = "Değiştir";
+"alert.default" = "Varsayılan";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "[%1$@] için yeni giriş kısayoluna basın\n\nMevcut: %2$@";
+"alert.recorder.macPrompt" = "[%1$@] için yeni Mac kısayoluna basın\n\nMevcut: %2$@";
+"alert.recorder.inputRecording" = "[%1$@] için yeni giriş tuşuna basın\n\nKaydediliyor: %2$@";
+"alert.recorder.macRecording" = "[%1$@] için yeni Mac tuşuna basın\n\nKaydediliyor: %2$@";
+"alert.recorder.langRecording" = "[%1$@] için yeni dil tuşuna basın\n\nKaydediliyor: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Giriş kısayolunu onayla";
+"alert.shortcutConfirm.macTitle" = "Mac kısayolunu onayla";
+"alert.shortcutConfirm.inputMessage" = "[%1$@] giriş kısayolunu\n%2$@\nolarak ayarla?";
+"alert.shortcutConfirm.macMessage" = "[%1$@] Mac kısayolunu\n%2$@\nolarak ayarla?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Dil tuşunu onayla";
+"alert.langKey.message" = "Dil değiştirme tuşunu\n%@\nolarak ayarla?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Kısayol hatası";
+"alert.shortcutError.message" = "Yalnızca değiştirici tuşlarla kısayol atanamaz.\nLütfen en az bir normal tuş ekleyin.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Kısayol çakışması";
+"alert.conflict.message" = "Bu kısayol zaten [%@] tarafından kullanılıyor.\nLütfen farklı bir kısayol seçin.";
+"alert.macConflict.title" = "macOS kısayol çakışması";
+"alert.macConflict.message" = "Bu kısayol macOS [%@] ile çakışıyor.\nYine de değiştir?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Dil tuşu ayarı";
+"lang.prompt" = "Dil değiştirmek için bir tuşa basın\n(örn.: Sağ Alt, Sağ Ctrl)";
+"lang.waiting" = "Tuş girişi bekleniyor...";
+"lang.skip" = "Atla";
+
+/* App Delegate */
+"app.error.title" = "WinKeys hatası";
+"app.error.message" = "Klavye olay dinleyicisi başlatılamadı.\nLütfen Sistem Ayarları > Gizlilik ve Güvenlik > Erişilebilirlik'te izinleri kontrol edin.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Pencereyi kapat";
+"macos.hideApp" = "Uygulamayı gizle";
+"macos.minimize" = "Simge durumuna küçült";
+"macos.newWindow" = "Yeni pencere";
+"macos.saveAs" = "Farklı kaydet";
+"macos.hideOtherApps" = "Diğer uygulamaları gizle";
+"macos.inputSourceToggle" = "Giriş kaynağını değiştir";
+"macos.fullScreen" = "Tam ekran";
+"macos.moveToTrash" = "Çöp kutusuna taşı";
+"macos.getInfo" = "Bilgi al";
+"macos.duplicate" = "Çoğalt";
+"macos.export" = "Dışa aktar";
+"macos.addressBarGo" = "Adres çubuğu / Git";
+"macos.areaScreenshot" = "Alan görüntüsü";
+"macos.existingShortcut" = "Mevcut kısayol";

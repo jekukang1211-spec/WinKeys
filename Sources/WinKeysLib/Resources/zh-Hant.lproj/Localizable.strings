@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "目前模式：Windows";
+"menu.currentMode.mac" = "目前模式：Mac";
+"menu.switchWindows" = "切換到 Windows 模式";
+"menu.switchMac" = "切換到 Mac 模式";
+"menu.settings" = "快捷鍵設定...";
+"menu.launchAtLogin" = "登入時啟動";
+"menu.quit" = "結束 WinKeys";
+"menu.language" = "語言";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - 快捷鍵設定";
+"editor.editPrompt" = "啟用編輯模式以進行更改";
+"editor.resetAll" = "全部重置";
+"editor.editEnable" = "啟用編輯模式";
+"editor.editLock" = "鎖定編輯模式";
+"editor.editWarning" = "⚠ 請確認快捷鍵不與現有 macOS 快捷鍵衝突";
+"editor.column.desc" = "功能";
+"editor.column.input" = "Windows 快捷鍵";
+"editor.column.output" = "Mac 快捷鍵";
+"editor.change" = "更改";
+
+/* Categories */
+"category.clipboard" = "剪貼簿 / 編輯";
+"category.file" = "檔案 / 文件";
+"category.browser" = "瀏覽器 / 分頁";
+"category.format" = "格式";
+"category.system" = "系統";
+"category.screenshot" = "截圖";
+"category.navigation" = "導覽";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "複製";
+"action.paste" = "貼上";
+"action.cut" = "剪下";
+"action.undo" = "還原";
+"action.redo" = "重做";
+"action.selectAll" = "全選";
+"action.save" = "儲存";
+"action.new" = "新增";
+"action.open" = "開啟";
+"action.print" = "列印";
+"action.find" = "尋找";
+"action.findReplace" = "尋找與取代";
+"action.newTab" = "新分頁";
+"action.closeTab" = "關閉分頁";
+"action.restoreTab" = "恢復已關閉的分頁";
+"action.refresh" = "重新整理";
+"action.refreshF5" = "重新整理 (F5)";
+"action.addressBar" = "網址列";
+"action.bold" = "粗體";
+"action.italic" = "斜體";
+"action.underline" = "底線";
+"action.appSwitch" = "切換應用程式";
+"action.appQuit" = "結束應用程式";
+"action.forceQuit" = "強制結束";
+"action.lockScreen" = "鎖定螢幕";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "全螢幕截圖";
+"action.screenshotWindow" = "視窗截圖";
+"action.screenshotArea" = "區域選取";
+"action.screenshotTool" = "截圖工具";
+"action.lineStart" = "行首";
+"action.lineEnd" = "行尾";
+"action.wordLeft" = "左移一詞";
+"action.wordRight" = "右移一詞";
+"action.wordDelete" = "刪除詞";
+"action.rename" = "重新命名";
+"action.trash" = "垃圾桶";
+"action.parentFolder" = "上層資料夾";
+"action.fileInfo" = "檔案資訊";
+"action.languageToggle" = "切換語言";
+"action.inputSourceToggle" = "切換輸入法";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "恢復所有預設值";
+"alert.restoreDefaults.message" = "刪除所有自訂快捷鍵設定並恢復預設值。";
+"alert.restoreDefaults.confirm" = "恢復預設";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "取消";
+"alert.confirm" = "確定";
+"alert.set" = "設定";
+"alert.reenter" = "重新輸入";
+"alert.change" = "更改";
+"alert.default" = "預設";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "請按下[%1$@]的新輸入快捷鍵\n\n目前：%2$@";
+"alert.recorder.macPrompt" = "請按下[%1$@]的新 Mac 模式快捷鍵\n\n目前：%2$@";
+"alert.recorder.inputRecording" = "請按下[%1$@]的新輸入鍵\n\n輸入中：%2$@";
+"alert.recorder.macRecording" = "請按下[%1$@]的新 Mac 鍵\n\n輸入中：%2$@";
+"alert.recorder.langRecording" = "請按下[%1$@]的新語言切換鍵\n\n輸入中：%2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "確認輸入快捷鍵";
+"alert.shortcutConfirm.macTitle" = "確認 Mac 快捷鍵";
+"alert.shortcutConfirm.inputMessage" = "將[%1$@]的輸入快捷鍵設為\n%2$@？";
+"alert.shortcutConfirm.macMessage" = "將[%1$@]的 Mac 快捷鍵設為\n%2$@？";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "確認語言切換鍵";
+"alert.langKey.message" = "將語言切換鍵設為\n%@？";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "快捷鍵錯誤";
+"alert.shortcutError.message" = "不能僅用修飾鍵設定快捷鍵。\n請至少包含一個一般鍵。";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "快捷鍵衝突";
+"alert.conflict.message" = "此快捷鍵已被[%@]使用。\n請選擇其他快捷鍵。";
+"alert.macConflict.title" = "macOS 快捷鍵衝突";
+"alert.macConflict.message" = "此快捷鍵與 macOS 的[%@]衝突。\n仍然要更改嗎？";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - 語言切換鍵設定";
+"lang.prompt" = "請按下用於語言切換的鍵\n（例如：右 Alt、右 Ctrl）";
+"lang.waiting" = "等待鍵盤輸入...";
+"lang.skip" = "略過";
+
+/* App Delegate */
+"app.error.title" = "WinKeys 錯誤";
+"app.error.message" = "無法啟動鍵盤事件監聽器。\n請在系統設定 > 隱私權與安全性 > 輔助使用中檢查權限。";
+
+/* macOS Shortcut Names (for conflict warnings) */
+"macos.closeWindow" = "關閉視窗";
+"macos.hideApp" = "隱藏應用程式";
+"macos.minimize" = "最小化";
+"macos.newWindow" = "新視窗";
+"macos.saveAs" = "另存新檔";
+"macos.hideOtherApps" = "隱藏其他應用程式";
+"macos.inputSourceToggle" = "切換輸入法";
+"macos.fullScreen" = "全螢幕";
+"macos.moveToTrash" = "丟到垃圾桶";
+"macos.getInfo" = "取得資訊";
+"macos.duplicate" = "複製";
+"macos.export" = "輸出";
+"macos.addressBarGo" = "網址列 / 前往";
+"macos.areaScreenshot" = "區域截圖";
+"macos.existingShortcut" = "現有快捷鍵";

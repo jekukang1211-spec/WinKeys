@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Mode actuel : Windows";
+"menu.currentMode.mac" = "Mode actuel : Mac";
+"menu.switchWindows" = "Passer en mode Windows";
+"menu.switchMac" = "Passer en mode Mac";
+"menu.settings" = "Paramètres des raccourcis...";
+"menu.launchAtLogin" = "Lancer au démarrage";
+"menu.quit" = "Quitter WinKeys";
+"menu.language" = "Langue";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Paramètres des raccourcis";
+"editor.editPrompt" = "Activez le mode édition pour effectuer des modifications";
+"editor.resetAll" = "Tout réinitialiser";
+"editor.editEnable" = "Activer le mode édition";
+"editor.editLock" = "Verrouiller le mode édition";
+"editor.editWarning" = "⚠ Vérifiez que les raccourcis n'entrent pas en conflit avec les raccourcis macOS existants";
+"editor.column.desc" = "Fonction";
+"editor.column.input" = "Raccourci Windows";
+"editor.column.output" = "Raccourci Mac";
+"editor.change" = "Modifier";
+
+/* Categories */
+"category.clipboard" = "Presse-papiers / Édition";
+"category.file" = "Fichier / Document";
+"category.browser" = "Navigateur / Onglets";
+"category.format" = "Mise en forme";
+"category.system" = "Système";
+"category.screenshot" = "Capture d'écran";
+"category.navigation" = "Navigation";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Copier";
+"action.paste" = "Coller";
+"action.cut" = "Couper";
+"action.undo" = "Annuler";
+"action.redo" = "Rétablir";
+"action.selectAll" = "Tout sélectionner";
+"action.save" = "Enregistrer";
+"action.new" = "Nouveau";
+"action.open" = "Ouvrir";
+"action.print" = "Imprimer";
+"action.find" = "Rechercher";
+"action.findReplace" = "Rechercher et remplacer";
+"action.newTab" = "Nouvel onglet";
+"action.closeTab" = "Fermer l'onglet";
+"action.restoreTab" = "Restaurer l'onglet fermé";
+"action.refresh" = "Actualiser";
+"action.refreshF5" = "Actualiser (F5)";
+"action.addressBar" = "Barre d'adresse";
+"action.bold" = "Gras";
+"action.italic" = "Italique";
+"action.underline" = "Souligné";
+"action.appSwitch" = "Changer d'application";
+"action.appQuit" = "Quitter l'application";
+"action.forceQuit" = "Forcer à quitter";
+"action.lockScreen" = "Verrouiller l'écran";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Capture plein écran";
+"action.screenshotWindow" = "Capture de fenêtre";
+"action.screenshotArea" = "Sélection de zone";
+"action.screenshotTool" = "Outil de capture";
+"action.lineStart" = "Début de ligne";
+"action.lineEnd" = "Fin de ligne";
+"action.wordLeft" = "Mot à gauche";
+"action.wordRight" = "Mot à droite";
+"action.wordDelete" = "Supprimer le mot";
+"action.rename" = "Renommer";
+"action.trash" = "Corbeille";
+"action.parentFolder" = "Dossier parent";
+"action.fileInfo" = "Informations du fichier";
+"action.languageToggle" = "Changer de langue";
+"action.inputSourceToggle" = "Changer de source d'entrée";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Restaurer les valeurs par défaut";
+"alert.restoreDefaults.message" = "Supprimer tous les raccourcis personnalisés et restaurer les valeurs par défaut.";
+"alert.restoreDefaults.confirm" = "Restaurer";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Annuler";
+"alert.confirm" = "OK";
+"alert.set" = "Définir";
+"alert.reenter" = "Ressaisir";
+"alert.change" = "Modifier";
+"alert.default" = "Par défaut";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Appuyez sur le nouveau raccourci d'entrée pour [%1$@]\n\nActuel : %2$@";
+"alert.recorder.macPrompt" = "Appuyez sur le nouveau raccourci Mac pour [%1$@]\n\nActuel : %2$@";
+"alert.recorder.inputRecording" = "Appuyez sur la nouvelle touche d'entrée pour [%1$@]\n\nEnregistrement : %2$@";
+"alert.recorder.macRecording" = "Appuyez sur la nouvelle touche Mac pour [%1$@]\n\nEnregistrement : %2$@";
+"alert.recorder.langRecording" = "Appuyez sur la nouvelle touche de langue pour [%1$@]\n\nEnregistrement : %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Confirmer le raccourci d'entrée";
+"alert.shortcutConfirm.macTitle" = "Confirmer le raccourci Mac";
+"alert.shortcutConfirm.inputMessage" = "Définir le raccourci d'entrée de [%1$@] sur\n%2$@ ?";
+"alert.shortcutConfirm.macMessage" = "Définir le raccourci Mac de [%1$@] sur\n%2$@ ?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Confirmer la touche de langue";
+"alert.langKey.message" = "Définir la touche de changement de langue sur\n%@ ?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Erreur de raccourci";
+"alert.shortcutError.message" = "Impossible de définir un raccourci avec uniquement des touches de modification.\nVeuillez inclure au moins une touche normale.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Conflit de raccourcis";
+"alert.conflict.message" = "Ce raccourci est déjà utilisé par [%@].\nVeuillez choisir un autre raccourci.";
+"alert.macConflict.title" = "Conflit avec un raccourci macOS";
+"alert.macConflict.message" = "Ce raccourci entre en conflit avec [%@] de macOS.\nModifier quand même ?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Configuration de la touche de langue";
+"lang.prompt" = "Appuyez sur la touche pour changer de langue\n(ex. : Alt droit, Ctrl droit)";
+"lang.waiting" = "En attente de saisie...";
+"lang.skip" = "Ignorer";
+
+/* App Delegate */
+"app.error.title" = "Erreur WinKeys";
+"app.error.message" = "Impossible de démarrer l'écouteur d'événements clavier.\nVérifiez les autorisations dans Réglages du Système > Confidentialité et sécurité > Accessibilité.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Fermer la fenêtre";
+"macos.hideApp" = "Masquer l'application";
+"macos.minimize" = "Réduire";
+"macos.newWindow" = "Nouvelle fenêtre";
+"macos.saveAs" = "Enregistrer sous";
+"macos.hideOtherApps" = "Masquer les autres applications";
+"macos.inputSourceToggle" = "Changer de source d'entrée";
+"macos.fullScreen" = "Plein écran";
+"macos.moveToTrash" = "Placer dans la corbeille";
+"macos.getInfo" = "Obtenir des informations";
+"macos.duplicate" = "Dupliquer";
+"macos.export" = "Exporter";
+"macos.addressBarGo" = "Barre d'adresse / Aller";
+"macos.areaScreenshot" = "Capture de zone";
+"macos.existingShortcut" = "Raccourci existant";

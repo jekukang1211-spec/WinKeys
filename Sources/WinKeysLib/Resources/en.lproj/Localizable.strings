@@ -6,6 +6,7 @@
 "menu.settings" = "Shortcut Settings...";
 "menu.launchAtLogin" = "Launch at Login";
 "menu.quit" = "Quit WinKeys";
+"menu.language" = "Language";
 
 /* Mapping Editor UI */
 "editor.windowTitle" = "WinKeys - Shortcut Settings";

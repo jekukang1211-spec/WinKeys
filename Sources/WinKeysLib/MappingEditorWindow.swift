@@ -16,6 +16,21 @@ final class MappingEditorWindow: NSObject, NSTableViewDataSource, NSTableViewDel
     private var editToggleButton: NSButton!
     private var lockLabel: NSTextField!
 
+    override init() {
+        super.init()
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(languageDidChange),
+            name: .languageChanged,
+            object: nil
+        )
+    }
+
+    @objc private func languageDidChange() {
+        // 언어 변경 시 에디터 창 닫기 (다시 열면 새 언어로 표시)
+        window?.close()
+    }
+
     struct DisplayMapping {
         let category: String
         let description: String

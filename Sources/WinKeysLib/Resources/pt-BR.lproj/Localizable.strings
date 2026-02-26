@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Modo atual: Windows";
+"menu.currentMode.mac" = "Modo atual: Mac";
+"menu.switchWindows" = "Mudar para modo Windows";
+"menu.switchMac" = "Mudar para modo Mac";
+"menu.settings" = "Configurações de atalhos...";
+"menu.launchAtLogin" = "Iniciar ao fazer login";
+"menu.quit" = "Sair do WinKeys";
+"menu.language" = "Idioma";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Configurações de atalhos";
+"editor.editPrompt" = "Ative o modo de edição para fazer alterações";
+"editor.resetAll" = "Redefinir tudo";
+"editor.editEnable" = "Ativar modo de edição";
+"editor.editLock" = "Bloquear modo de edição";
+"editor.editWarning" = "⚠ Verifique se os atalhos não conflitam com atalhos existentes do macOS";
+"editor.column.desc" = "Função";
+"editor.column.input" = "Atalho do Windows";
+"editor.column.output" = "Atalho do Mac";
+"editor.change" = "Alterar";
+
+/* Categories */
+"category.clipboard" = "Área de transferência / Edição";
+"category.file" = "Arquivo / Documento";
+"category.browser" = "Navegador / Abas";
+"category.format" = "Formatação";
+"category.system" = "Sistema";
+"category.screenshot" = "Captura de tela";
+"category.navigation" = "Navegação";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Copiar";
+"action.paste" = "Colar";
+"action.cut" = "Recortar";
+"action.undo" = "Desfazer";
+"action.redo" = "Refazer";
+"action.selectAll" = "Selecionar tudo";
+"action.save" = "Salvar";
+"action.new" = "Novo";
+"action.open" = "Abrir";
+"action.print" = "Imprimir";
+"action.find" = "Buscar";
+"action.findReplace" = "Buscar e substituir";
+"action.newTab" = "Nova aba";
+"action.closeTab" = "Fechar aba";
+"action.restoreTab" = "Restaurar aba fechada";
+"action.refresh" = "Atualizar";
+"action.refreshF5" = "Atualizar (F5)";
+"action.addressBar" = "Barra de endereços";
+"action.bold" = "Negrito";
+"action.italic" = "Itálico";
+"action.underline" = "Sublinhado";
+"action.appSwitch" = "Alternar aplicativo";
+"action.appQuit" = "Encerrar aplicativo";
+"action.forceQuit" = "Forçar encerramento";
+"action.lockScreen" = "Bloquear tela";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Captura de tela inteira";
+"action.screenshotWindow" = "Captura de janela";
+"action.screenshotArea" = "Seleção de área";
+"action.screenshotTool" = "Ferramenta de captura";
+"action.lineStart" = "Início da linha";
+"action.lineEnd" = "Fim da linha";
+"action.wordLeft" = "Palavra à esquerda";
+"action.wordRight" = "Palavra à direita";
+"action.wordDelete" = "Excluir palavra";
+"action.rename" = "Renomear";
+"action.trash" = "Lixeira";
+"action.parentFolder" = "Pasta superior";
+"action.fileInfo" = "Informações do arquivo";
+"action.languageToggle" = "Alternar idioma";
+"action.inputSourceToggle" = "Alternar fonte de entrada";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Restaurar padrões";
+"alert.restoreDefaults.message" = "Excluir todas as configurações personalizadas e restaurar os padrões.";
+"alert.restoreDefaults.confirm" = "Restaurar padrões";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Cancelar";
+"alert.confirm" = "OK";
+"alert.set" = "Definir";
+"alert.reenter" = "Redigitar";
+"alert.change" = "Alterar";
+"alert.default" = "Padrão";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Pressione o novo atalho de entrada para [%1$@]\n\nAtual: %2$@";
+"alert.recorder.macPrompt" = "Pressione o novo atalho do modo Mac para [%1$@]\n\nAtual: %2$@";
+"alert.recorder.inputRecording" = "Pressione a nova tecla de entrada para [%1$@]\n\nGravando: %2$@";
+"alert.recorder.macRecording" = "Pressione a nova tecla Mac para [%1$@]\n\nGravando: %2$@";
+"alert.recorder.langRecording" = "Pressione a nova tecla de idioma para [%1$@]\n\nGravando: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Confirmar atalho de entrada";
+"alert.shortcutConfirm.macTitle" = "Confirmar atalho do Mac";
+"alert.shortcutConfirm.inputMessage" = "Definir o atalho de entrada de [%1$@] como\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "Definir o atalho do Mac de [%1$@] como\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Confirmar tecla de idioma";
+"alert.langKey.message" = "Definir a tecla de alternância de idioma como\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Erro de atalho";
+"alert.shortcutError.message" = "Não é possível definir um atalho apenas com teclas modificadoras.\nInclua pelo menos uma tecla regular.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Conflito de atalhos";
+"alert.conflict.message" = "Este atalho já está em uso por [%@].\nEscolha um atalho diferente.";
+"alert.macConflict.title" = "Conflito com atalho do macOS";
+"alert.macConflict.message" = "Este atalho conflita com [%@] do macOS.\nAlterar mesmo assim?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Configuração de tecla de idioma";
+"lang.prompt" = "Pressione a tecla para alternar o idioma\n(ex.: Alt direito, Ctrl direito)";
+"lang.waiting" = "Aguardando entrada do teclado...";
+"lang.skip" = "Pular";
+
+/* App Delegate */
+"app.error.title" = "Erro do WinKeys";
+"app.error.message" = "Não foi possível iniciar o ouvinte de eventos do teclado.\nVerifique as permissões em Configurações do Sistema > Privacidade e Segurança > Acessibilidade.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Fechar janela";
+"macos.hideApp" = "Ocultar aplicativo";
+"macos.minimize" = "Minimizar";
+"macos.newWindow" = "Nova janela";
+"macos.saveAs" = "Salvar como";
+"macos.hideOtherApps" = "Ocultar outros aplicativos";
+"macos.inputSourceToggle" = "Alternar fonte de entrada";
+"macos.fullScreen" = "Tela cheia";
+"macos.moveToTrash" = "Mover para o Lixo";
+"macos.getInfo" = "Obter informações";
+"macos.duplicate" = "Duplicar";
+"macos.export" = "Exportar";
+"macos.addressBarGo" = "Barra de endereços / Ir";
+"macos.areaScreenshot" = "Captura de área";
+"macos.existingShortcut" = "Atalho existente";

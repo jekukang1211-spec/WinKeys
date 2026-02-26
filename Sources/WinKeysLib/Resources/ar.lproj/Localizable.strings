@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "الوضع الحالي: Windows";
+"menu.currentMode.mac" = "الوضع الحالي: Mac";
+"menu.switchWindows" = "التبديل إلى وضع Windows";
+"menu.switchMac" = "التبديل إلى وضع Mac";
+"menu.settings" = "إعدادات الاختصارات...";
+"menu.launchAtLogin" = "التشغيل عند تسجيل الدخول";
+"menu.quit" = "إنهاء WinKeys";
+"menu.language" = "اللغة";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - إعدادات الاختصارات";
+"editor.editPrompt" = "فعّل وضع التحرير لإجراء التغييرات";
+"editor.resetAll" = "إعادة تعيين الكل";
+"editor.editEnable" = "تفعيل وضع التحرير";
+"editor.editLock" = "قفل وضع التحرير";
+"editor.editWarning" = "⚠ تأكد من عدم تعارض الاختصارات مع اختصارات macOS الحالية";
+"editor.column.desc" = "الوظيفة";
+"editor.column.input" = "اختصار Windows";
+"editor.column.output" = "اختصار Mac";
+"editor.change" = "تغيير";
+
+/* Categories */
+"category.clipboard" = "الحافظة / التحرير";
+"category.file" = "ملف / مستند";
+"category.browser" = "المتصفح / علامات التبويب";
+"category.format" = "التنسيق";
+"category.system" = "النظام";
+"category.screenshot" = "لقطة الشاشة";
+"category.navigation" = "التنقل";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "نسخ";
+"action.paste" = "لصق";
+"action.cut" = "قص";
+"action.undo" = "تراجع";
+"action.redo" = "إعادة";
+"action.selectAll" = "تحديد الكل";
+"action.save" = "حفظ";
+"action.new" = "جديد";
+"action.open" = "فتح";
+"action.print" = "طباعة";
+"action.find" = "بحث";
+"action.findReplace" = "بحث واستبدال";
+"action.newTab" = "علامة تبويب جديدة";
+"action.closeTab" = "إغلاق علامة التبويب";
+"action.restoreTab" = "استعادة علامة التبويب المغلقة";
+"action.refresh" = "تحديث";
+"action.refreshF5" = "تحديث (F5)";
+"action.addressBar" = "شريط العناوين";
+"action.bold" = "عريض";
+"action.italic" = "مائل";
+"action.underline" = "تسطير";
+"action.appSwitch" = "تبديل التطبيقات";
+"action.appQuit" = "إنهاء التطبيق";
+"action.forceQuit" = "إنهاء إجباري";
+"action.lockScreen" = "قفل الشاشة";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "لقطة شاشة كاملة";
+"action.screenshotWindow" = "لقطة نافذة";
+"action.screenshotArea" = "تحديد منطقة";
+"action.screenshotTool" = "أداة لقطة الشاشة";
+"action.lineStart" = "بداية السطر";
+"action.lineEnd" = "نهاية السطر";
+"action.wordLeft" = "كلمة لليسار";
+"action.wordRight" = "كلمة لليمين";
+"action.wordDelete" = "حذف كلمة";
+"action.rename" = "إعادة تسمية";
+"action.trash" = "سلة المهملات";
+"action.parentFolder" = "المجلد الأعلى";
+"action.fileInfo" = "معلومات الملف";
+"action.languageToggle" = "تبديل اللغة";
+"action.inputSourceToggle" = "تبديل مصدر الإدخال";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "استعادة جميع الإعدادات الافتراضية";
+"alert.restoreDefaults.message" = "حذف جميع إعدادات الاختصارات المخصصة واستعادة الإعدادات الافتراضية.";
+"alert.restoreDefaults.confirm" = "استعادة";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "إلغاء";
+"alert.confirm" = "موافق";
+"alert.set" = "تعيين";
+"alert.reenter" = "إعادة الإدخال";
+"alert.change" = "تغيير";
+"alert.default" = "افتراضي";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "اضغط اختصار الإدخال الجديد لـ [%1$@]\n\nالحالي: %2$@";
+"alert.recorder.macPrompt" = "اضغط اختصار Mac الجديد لـ [%1$@]\n\nالحالي: %2$@";
+"alert.recorder.inputRecording" = "اضغط مفتاح الإدخال الجديد لـ [%1$@]\n\nالتسجيل: %2$@";
+"alert.recorder.macRecording" = "اضغط مفتاح Mac الجديد لـ [%1$@]\n\nالتسجيل: %2$@";
+"alert.recorder.langRecording" = "اضغط مفتاح اللغة الجديد لـ [%1$@]\n\nالتسجيل: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "تأكيد اختصار الإدخال";
+"alert.shortcutConfirm.macTitle" = "تأكيد اختصار Mac";
+"alert.shortcutConfirm.inputMessage" = "تعيين اختصار الإدخال لـ [%1$@] إلى\n%2$@؟";
+"alert.shortcutConfirm.macMessage" = "تعيين اختصار Mac لـ [%1$@] إلى\n%2$@؟";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "تأكيد مفتاح اللغة";
+"alert.langKey.message" = "تعيين مفتاح تبديل اللغة إلى\n%@؟";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "خطأ في الاختصار";
+"alert.shortcutError.message" = "لا يمكن تعيين اختصار بمفاتيح التعديل فقط.\nيرجى تضمين مفتاح عادي واحد على الأقل.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "تعارض الاختصارات";
+"alert.conflict.message" = "هذا الاختصار مستخدم بالفعل بواسطة [%@].\nيرجى اختيار اختصار مختلف.";
+"alert.macConflict.title" = "تعارض مع اختصار macOS";
+"alert.macConflict.message" = "هذا الاختصار يتعارض مع [%@] في macOS.\nهل تريد التغيير على أي حال؟";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - إعداد مفتاح اللغة";
+"lang.prompt" = "اضغط المفتاح لتبديل اللغة\n(مثال: Alt الأيمن، Ctrl الأيمن)";
+"lang.waiting" = "في انتظار الإدخال...";
+"lang.skip" = "تخطي";
+
+/* App Delegate */
+"app.error.title" = "خطأ WinKeys";
+"app.error.message" = "تعذر بدء مستمع أحداث لوحة المفاتيح.\nيرجى التحقق من الأذونات في إعدادات النظام > الخصوصية والأمان > إمكانية الوصول.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "إغلاق النافذة";
+"macos.hideApp" = "إخفاء التطبيق";
+"macos.minimize" = "تصغير";
+"macos.newWindow" = "نافذة جديدة";
+"macos.saveAs" = "حفظ باسم";
+"macos.hideOtherApps" = "إخفاء التطبيقات الأخرى";
+"macos.inputSourceToggle" = "تبديل مصدر الإدخال";
+"macos.fullScreen" = "ملء الشاشة";
+"macos.moveToTrash" = "نقل إلى سلة المهملات";
+"macos.getInfo" = "الحصول على معلومات";
+"macos.duplicate" = "تكرار";
+"macos.export" = "تصدير";
+"macos.addressBarGo" = "شريط العناوين / انتقال";
+"macos.areaScreenshot" = "لقطة منطقة";
+"macos.existingShortcut" = "اختصار موجود";

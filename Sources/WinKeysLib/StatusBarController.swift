@@ -15,6 +15,12 @@ final class StatusBarController {
             name: .modeChanged,
             object: nil
         )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(languageDidChange),
+            name: .languageChanged,
+            object: nil
+        )
     }
 
     private func updateIcon() {
@@ -68,6 +74,28 @@ final class StatusBarController {
 
         menu.addItem(NSMenuItem.separator())
 
+        // Language submenu
+        let langMenu = NSMenu()
+        let currentLang = Preferences.shared.appLanguage
+        for lang in availableLanguages {
+            let item = NSMenuItem(
+                title: lang.nativeName,
+                action: #selector(changeLanguage(_:)),
+                keyEquivalent: ""
+            )
+            item.target = self
+            item.representedObject = lang.code
+            item.state = (lang.code == currentLang) ? .on : .off
+            langMenu.addItem(item)
+        }
+        let langItem = NSMenuItem(
+            title: L("menu.language"),
+            action: nil,
+            keyEquivalent: ""
+        )
+        langItem.submenu = langMenu
+        menu.addItem(langItem)
+
         let loginItem = NSMenuItem(
             title: L("menu.launchAtLogin"),
             action: #selector(toggleLaunchAtLogin),
@@ -95,6 +123,10 @@ final class StatusBarController {
         buildMenu()
     }
 
+    @objc private func languageDidChange() {
+        buildMenu()
+    }
+
     @objc private func switchToWindowsMode() {
         Preferences.shared.isWindowsMode = true
         NotificationCenter.default.post(name: .modeChanged, object: nil)
@@ -107,6 +139,13 @@ final class StatusBarController {
 
     @objc private func openMappingEditor() {
         mappingEditor.show()
+    }
+
+    @objc private func changeLanguage(_ sender: NSMenuItem) {
+        guard let code = sender.representedObject as? String else { return }
+        Preferences.shared.appLanguage = code
+        updateLanguageBundle()
+        NotificationCenter.default.post(name: .languageChanged, object: nil)
     }
 
     @objc private func toggleLaunchAtLogin() {

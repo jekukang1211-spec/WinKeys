@@ -12,6 +12,7 @@ final class Preferences {
         static let languageKeyCode = "languageKeyCode"
         static let languageKeyConfigured = "languageKeyConfigured"
         static let launchAtLogin = "launchAtLogin"
+        static let appLanguage = "appLanguage"
     }
 
     var isWindowsMode: Bool {
@@ -51,5 +52,10 @@ final class Preferences {
     var launchAtLogin: Bool {
         get { defaults.bool(forKey: Keys.launchAtLogin) }
         set { defaults.set(newValue, forKey: Keys.launchAtLogin) }
+    }
+
+    var appLanguage: String {
+        get { defaults.string(forKey: Keys.appLanguage) ?? "en" }
+        set { defaults.set(newValue, forKey: Keys.appLanguage) }
     }
 }

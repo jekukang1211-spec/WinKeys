@@ -6,6 +6,7 @@
 "menu.settings" = "단축키 설정...";
 "menu.launchAtLogin" = "로그인 시 자동 실행";
 "menu.quit" = "WinKeys 종료";
+"menu.language" = "언어";
 
 /* Mapping Editor UI */
 "editor.windowTitle" = "WinKeys - 단축키 설정";

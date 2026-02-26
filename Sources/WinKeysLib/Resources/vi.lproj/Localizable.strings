@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Chế độ hiện tại: Windows";
+"menu.currentMode.mac" = "Chế độ hiện tại: Mac";
+"menu.switchWindows" = "Chuyển sang chế độ Windows";
+"menu.switchMac" = "Chuyển sang chế độ Mac";
+"menu.settings" = "Cài đặt phím tắt...";
+"menu.launchAtLogin" = "Khởi động khi đăng nhập";
+"menu.quit" = "Thoát WinKeys";
+"menu.language" = "Ngôn ngữ";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Cài đặt phím tắt";
+"editor.editPrompt" = "Bật chế độ chỉnh sửa để thay đổi";
+"editor.resetAll" = "Đặt lại tất cả";
+"editor.editEnable" = "Bật chế độ chỉnh sửa";
+"editor.editLock" = "Khóa chế độ chỉnh sửa";
+"editor.editWarning" = "⚠ Xác nhận phím tắt không xung đột với phím tắt macOS hiện có";
+"editor.column.desc" = "Chức năng";
+"editor.column.input" = "Phím tắt Windows";
+"editor.column.output" = "Phím tắt Mac";
+"editor.change" = "Thay đổi";
+
+/* Categories */
+"category.clipboard" = "Bảng nhớ tạm / Chỉnh sửa";
+"category.file" = "Tệp / Tài liệu";
+"category.browser" = "Trình duyệt / Tab";
+"category.format" = "Định dạng";
+"category.system" = "Hệ thống";
+"category.screenshot" = "Chụp màn hình";
+"category.navigation" = "Điều hướng";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Sao chép";
+"action.paste" = "Dán";
+"action.cut" = "Cắt";
+"action.undo" = "Hoàn tác";
+"action.redo" = "Làm lại";
+"action.selectAll" = "Chọn tất cả";
+"action.save" = "Lưu";
+"action.new" = "Tạo mới";
+"action.open" = "Mở";
+"action.print" = "In";
+"action.find" = "Tìm kiếm";
+"action.findReplace" = "Tìm và thay thế";
+"action.newTab" = "Tab mới";
+"action.closeTab" = "Đóng tab";
+"action.restoreTab" = "Khôi phục tab đã đóng";
+"action.refresh" = "Làm mới";
+"action.refreshF5" = "Làm mới (F5)";
+"action.addressBar" = "Thanh địa chỉ";
+"action.bold" = "In đậm";
+"action.italic" = "In nghiêng";
+"action.underline" = "Gạch chân";
+"action.appSwitch" = "Chuyển ứng dụng";
+"action.appQuit" = "Thoát ứng dụng";
+"action.forceQuit" = "Buộc thoát";
+"action.lockScreen" = "Khóa màn hình";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Chụp toàn màn hình";
+"action.screenshotWindow" = "Chụp cửa sổ";
+"action.screenshotArea" = "Chọn vùng";
+"action.screenshotTool" = "Công cụ chụp màn hình";
+"action.lineStart" = "Đầu dòng";
+"action.lineEnd" = "Cuối dòng";
+"action.wordLeft" = "Từ sang trái";
+"action.wordRight" = "Từ sang phải";
+"action.wordDelete" = "Xóa từ";
+"action.rename" = "Đổi tên";
+"action.trash" = "Thùng rác";
+"action.parentFolder" = "Thư mục cha";
+"action.fileInfo" = "Thông tin tệp";
+"action.languageToggle" = "Chuyển ngôn ngữ";
+"action.inputSourceToggle" = "Chuyển nguồn nhập";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Khôi phục tất cả mặc định";
+"alert.restoreDefaults.message" = "Xóa tất cả cài đặt phím tắt tùy chỉnh và khôi phục mặc định.";
+"alert.restoreDefaults.confirm" = "Khôi phục";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Hủy";
+"alert.confirm" = "OK";
+"alert.set" = "Đặt";
+"alert.reenter" = "Nhập lại";
+"alert.change" = "Thay đổi";
+"alert.default" = "Mặc định";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Nhấn phím tắt nhập mới cho [%1$@]\n\nHiện tại: %2$@";
+"alert.recorder.macPrompt" = "Nhấn phím tắt Mac mới cho [%1$@]\n\nHiện tại: %2$@";
+"alert.recorder.inputRecording" = "Nhấn phím nhập mới cho [%1$@]\n\nĐang ghi: %2$@";
+"alert.recorder.macRecording" = "Nhấn phím Mac mới cho [%1$@]\n\nĐang ghi: %2$@";
+"alert.recorder.langRecording" = "Nhấn phím ngôn ngữ mới cho [%1$@]\n\nĐang ghi: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Xác nhận phím tắt nhập";
+"alert.shortcutConfirm.macTitle" = "Xác nhận phím tắt Mac";
+"alert.shortcutConfirm.inputMessage" = "Đặt phím tắt nhập của [%1$@] thành\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "Đặt phím tắt Mac của [%1$@] thành\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Xác nhận phím ngôn ngữ";
+"alert.langKey.message" = "Đặt phím chuyển ngôn ngữ thành\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Lỗi phím tắt";
+"alert.shortcutError.message" = "Không thể đặt phím tắt chỉ với phím bổ trợ.\nVui lòng thêm ít nhất một phím thường.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Xung đột phím tắt";
+"alert.conflict.message" = "Phím tắt này đã được [%@] sử dụng.\nVui lòng chọn phím tắt khác.";
+"alert.macConflict.title" = "Xung đột với phím tắt macOS";
+"alert.macConflict.message" = "Phím tắt này xung đột với [%@] của macOS.\nVẫn thay đổi?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Cài đặt phím ngôn ngữ";
+"lang.prompt" = "Nhấn phím để chuyển ngôn ngữ\n(ví dụ: Alt phải, Ctrl phải)";
+"lang.waiting" = "Đang chờ nhập phím...";
+"lang.skip" = "Bỏ qua";
+
+/* App Delegate */
+"app.error.title" = "Lỗi WinKeys";
+"app.error.message" = "Không thể khởi động trình lắng nghe sự kiện bàn phím.\nVui lòng kiểm tra quyền trong Cài đặt hệ thống > Quyền riêng tư & Bảo mật > Trợ năng.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Đóng cửa sổ";
+"macos.hideApp" = "Ẩn ứng dụng";
+"macos.minimize" = "Thu nhỏ";
+"macos.newWindow" = "Cửa sổ mới";
+"macos.saveAs" = "Lưu dưới dạng";
+"macos.hideOtherApps" = "Ẩn ứng dụng khác";
+"macos.inputSourceToggle" = "Chuyển nguồn nhập";
+"macos.fullScreen" = "Toàn màn hình";
+"macos.moveToTrash" = "Chuyển vào thùng rác";
+"macos.getInfo" = "Thông tin";
+"macos.duplicate" = "Nhân đôi";
+"macos.export" = "Xuất";
+"macos.addressBarGo" = "Thanh địa chỉ / Đi tới";
+"macos.areaScreenshot" = "Chụp vùng";
+"macos.existingShortcut" = "Phím tắt hiện có";

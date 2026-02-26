@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "現在のモード: Windows";
+"menu.currentMode.mac" = "現在のモード: Mac";
+"menu.switchWindows" = "Windowsモードに切替";
+"menu.switchMac" = "Macモードに切替";
+"menu.settings" = "ショートカット設定...";
+"menu.launchAtLogin" = "ログイン時に起動";
+"menu.quit" = "WinKeysを終了";
+"menu.language" = "言語";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - ショートカット設定";
+"editor.editPrompt" = "変更するには編集モードを有効にしてください";
+"editor.resetAll" = "すべてリセット";
+"editor.editEnable" = "編集モード有効化";
+"editor.editLock" = "編集モードロック";
+"editor.editWarning" = "⚠ 既存のmacOSショートカットと競合しないか確認してください";
+"editor.column.desc" = "機能";
+"editor.column.input" = "Windowsショートカット";
+"editor.column.output" = "Macショートカット";
+"editor.change" = "変更";
+
+/* Categories */
+"category.clipboard" = "クリップボード / 編集";
+"category.file" = "ファイル / ドキュメント";
+"category.browser" = "ブラウザ / タブ";
+"category.format" = "書式";
+"category.system" = "システム";
+"category.screenshot" = "スクリーンショット";
+"category.navigation" = "ナビゲーション";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "コピー";
+"action.paste" = "ペースト";
+"action.cut" = "カット";
+"action.undo" = "元に戻す";
+"action.redo" = "やり直し";
+"action.selectAll" = "すべて選択";
+"action.save" = "保存";
+"action.new" = "新規作成";
+"action.open" = "開く";
+"action.print" = "印刷";
+"action.find" = "検索";
+"action.findReplace" = "検索と置換";
+"action.newTab" = "新しいタブ";
+"action.closeTab" = "タブを閉じる";
+"action.restoreTab" = "閉じたタブを復元";
+"action.refresh" = "更新";
+"action.refreshF5" = "更新 (F5)";
+"action.addressBar" = "アドレスバー";
+"action.bold" = "太字";
+"action.italic" = "斜体";
+"action.underline" = "下線";
+"action.appSwitch" = "アプリ切替";
+"action.appQuit" = "アプリ終了";
+"action.forceQuit" = "強制終了";
+"action.lockScreen" = "画面ロック";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "全画面スクリーンショット";
+"action.screenshotWindow" = "ウィンドウキャプチャ";
+"action.screenshotArea" = "範囲選択";
+"action.screenshotTool" = "スクリーンショットツール";
+"action.lineStart" = "行頭";
+"action.lineEnd" = "行末";
+"action.wordLeft" = "単語移動 (左)";
+"action.wordRight" = "単語移動 (右)";
+"action.wordDelete" = "単語削除";
+"action.rename" = "名前変更";
+"action.trash" = "ゴミ箱";
+"action.parentFolder" = "上位フォルダ";
+"action.fileInfo" = "ファイル情報";
+"action.languageToggle" = "言語切替";
+"action.inputSourceToggle" = "入力ソース切替";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "すべてデフォルトに復元";
+"alert.restoreDefaults.message" = "すべてのカスタムショートカット設定を削除し、デフォルトに戻します。";
+"alert.restoreDefaults.confirm" = "デフォルトに復元";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "キャンセル";
+"alert.confirm" = "OK";
+"alert.set" = "設定";
+"alert.reenter" = "再入力";
+"alert.change" = "変更";
+"alert.default" = "デフォルト";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "[%1$@]の新しい入力ショートカットを押してください\n\n現在: %2$@";
+"alert.recorder.macPrompt" = "[%1$@]の新しいMacモードショートカットを押してください\n\n現在: %2$@";
+"alert.recorder.inputRecording" = "[%1$@]の新しい入力キーを押してください\n\n入力中: %2$@";
+"alert.recorder.macRecording" = "[%1$@]の新しいMacキーを押してください\n\n入力中: %2$@";
+"alert.recorder.langRecording" = "[%1$@]の新しい言語切替キーを押してください\n\n入力中: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "入力ショートカットの確認";
+"alert.shortcutConfirm.macTitle" = "Macショートカットの確認";
+"alert.shortcutConfirm.inputMessage" = "[%1$@]の入力ショートカットを\n%2$@\nに設定しますか？";
+"alert.shortcutConfirm.macMessage" = "[%1$@]のMacショートカットを\n%2$@\nに設定しますか？";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "言語切替キーの確認";
+"alert.langKey.message" = "言語切替キーを\n%@\nに設定しますか？";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "ショートカットエラー";
+"alert.shortcutError.message" = "修飾キーだけではショートカットを設定できません。\n通常キーを1つ以上含めてください。";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "ショートカットの競合";
+"alert.conflict.message" = "このショートカットは既に[%@]で使用されています。\n別のショートカットを選択してください。";
+"alert.macConflict.title" = "macOSショートカットの競合";
+"alert.macConflict.message" = "このショートカットはmacOSの[%@]と競合しています。\nそれでも変更しますか？";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - 言語切替キー設定";
+"lang.prompt" = "言語切替に使用するキーを押してください\n(例: 右Alt、右Ctrl)";
+"lang.waiting" = "キー入力待機中...";
+"lang.skip" = "スキップ";
+
+/* App Delegate */
+"app.error.title" = "WinKeysエラー";
+"app.error.message" = "キーボードイベントリスナーを開始できません。\nシステム設定 > プライバシーとセキュリティ > アクセシビリティで権限を確認してください。";
+
+/* macOS Shortcut Names (for conflict warnings) */
+"macos.closeWindow" = "ウィンドウを閉じる";
+"macos.hideApp" = "アプリを隠す";
+"macos.minimize" = "最小化";
+"macos.newWindow" = "新しいウィンドウ";
+"macos.saveAs" = "名前を付けて保存";
+"macos.hideOtherApps" = "他のアプリを隠す";
+"macos.inputSourceToggle" = "入力ソース切替";
+"macos.fullScreen" = "フルスクリーン";
+"macos.moveToTrash" = "ゴミ箱に移動";
+"macos.getInfo" = "情報を見る";
+"macos.duplicate" = "複製";
+"macos.export" = "書き出し";
+"macos.addressBarGo" = "アドレスバー / 移動";
+"macos.areaScreenshot" = "範囲スクリーンショット";
+"macos.existingShortcut" = "既存のショートカット";

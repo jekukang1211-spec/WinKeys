@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "वर्तमान मोड: Windows";
+"menu.currentMode.mac" = "वर्तमान मोड: Mac";
+"menu.switchWindows" = "Windows मोड में बदलें";
+"menu.switchMac" = "Mac मोड में बदलें";
+"menu.settings" = "शॉर्टकट सेटिंग्स...";
+"menu.launchAtLogin" = "लॉगिन पर शुरू करें";
+"menu.quit" = "WinKeys बंद करें";
+"menu.language" = "भाषा";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - शॉर्टकट सेटिंग्स";
+"editor.editPrompt" = "बदलाव करने के लिए संपादन मोड सक्षम करें";
+"editor.resetAll" = "सब रीसेट करें";
+"editor.editEnable" = "संपादन मोड सक्षम करें";
+"editor.editLock" = "संपादन मोड लॉक करें";
+"editor.editWarning" = "⚠ सुनिश्चित करें कि शॉर्टकट मौजूदा macOS शॉर्टकट से टकराते नहीं हैं";
+"editor.column.desc" = "फ़ंक्शन";
+"editor.column.input" = "Windows शॉर्टकट";
+"editor.column.output" = "Mac शॉर्टकट";
+"editor.change" = "बदलें";
+
+/* Categories */
+"category.clipboard" = "क्लिपबोर्ड / संपादन";
+"category.file" = "फ़ाइल / दस्तावेज़";
+"category.browser" = "ब्राउज़र / टैब";
+"category.format" = "फ़ॉर्मेटिंग";
+"category.system" = "सिस्टम";
+"category.screenshot" = "स्क्रीनशॉट";
+"category.navigation" = "नेविगेशन";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "कॉपी";
+"action.paste" = "पेस्ट";
+"action.cut" = "कट";
+"action.undo" = "पूर्ववत करें";
+"action.redo" = "फिर से करें";
+"action.selectAll" = "सभी चुनें";
+"action.save" = "सहेजें";
+"action.new" = "नया";
+"action.open" = "खोलें";
+"action.print" = "प्रिंट";
+"action.find" = "खोजें";
+"action.findReplace" = "खोजें और बदलें";
+"action.newTab" = "नया टैब";
+"action.closeTab" = "टैब बंद करें";
+"action.restoreTab" = "बंद टैब पुनर्स्थापित करें";
+"action.refresh" = "रीफ़्रेश";
+"action.refreshF5" = "रीफ़्रेश (F5)";
+"action.addressBar" = "एड्रेस बार";
+"action.bold" = "बोल्ड";
+"action.italic" = "इटैलिक";
+"action.underline" = "अंडरलाइन";
+"action.appSwitch" = "ऐप स्विच";
+"action.appQuit" = "ऐप बंद करें";
+"action.forceQuit" = "जबरन बंद करें";
+"action.lockScreen" = "स्क्रीन लॉक";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "पूर्ण स्क्रीनशॉट";
+"action.screenshotWindow" = "विंडो कैप्चर";
+"action.screenshotArea" = "क्षेत्र चयन";
+"action.screenshotTool" = "स्क्रीनशॉट टूल";
+"action.lineStart" = "पंक्ति की शुरुआत";
+"action.lineEnd" = "पंक्ति का अंत";
+"action.wordLeft" = "शब्द बाएँ";
+"action.wordRight" = "शब्द दाएँ";
+"action.wordDelete" = "शब्द हटाएँ";
+"action.rename" = "नाम बदलें";
+"action.trash" = "ट्रैश";
+"action.parentFolder" = "ऊपरी फ़ोल्डर";
+"action.fileInfo" = "फ़ाइल जानकारी";
+"action.languageToggle" = "भाषा बदलें";
+"action.inputSourceToggle" = "इनपुट स्रोत बदलें";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "सभी डिफ़ॉल्ट पुनर्स्थापित करें";
+"alert.restoreDefaults.message" = "सभी कस्टम शॉर्टकट सेटिंग्स हटाएँ और डिफ़ॉल्ट पुनर्स्थापित करें।";
+"alert.restoreDefaults.confirm" = "पुनर्स्थापित करें";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "रद्द करें";
+"alert.confirm" = "ठीक है";
+"alert.set" = "सेट करें";
+"alert.reenter" = "पुनः दर्ज करें";
+"alert.change" = "बदलें";
+"alert.default" = "डिफ़ॉल्ट";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "[%1$@] के लिए नया इनपुट शॉर्टकट दबाएँ\n\nवर्तमान: %2$@";
+"alert.recorder.macPrompt" = "[%1$@] के लिए नया Mac मोड शॉर्टकट दबाएँ\n\nवर्तमान: %2$@";
+"alert.recorder.inputRecording" = "[%1$@] के लिए नई इनपुट कुंजी दबाएँ\n\nरिकॉर्डिंग: %2$@";
+"alert.recorder.macRecording" = "[%1$@] के लिए नई Mac कुंजी दबाएँ\n\nरिकॉर्डिंग: %2$@";
+"alert.recorder.langRecording" = "[%1$@] के लिए नई भाषा कुंजी दबाएँ\n\nरिकॉर्डिंग: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "इनपुट शॉर्टकट की पुष्टि करें";
+"alert.shortcutConfirm.macTitle" = "Mac शॉर्टकट की पुष्टि करें";
+"alert.shortcutConfirm.inputMessage" = "[%1$@] का इनपुट शॉर्टकट\n%2$@\nपर सेट करें?";
+"alert.shortcutConfirm.macMessage" = "[%1$@] का Mac शॉर्टकट\n%2$@\nपर सेट करें?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "भाषा कुंजी की पुष्टि करें";
+"alert.langKey.message" = "भाषा स्विच कुंजी को\n%@\nपर सेट करें?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "शॉर्टकट त्रुटि";
+"alert.shortcutError.message" = "केवल मॉडिफ़ायर कुंजियों से शॉर्टकट सेट नहीं किया जा सकता।\nकृपया कम से कम एक सामान्य कुंजी शामिल करें।";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "शॉर्टकट विरोध";
+"alert.conflict.message" = "यह शॉर्टकट पहले से [%@] द्वारा उपयोग में है।\nकृपया कोई अन्य शॉर्टकट चुनें।";
+"alert.macConflict.title" = "macOS शॉर्टकट विरोध";
+"alert.macConflict.message" = "यह शॉर्टकट macOS [%@] से टकराता है।\nफिर भी बदलें?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - भाषा कुंजी सेटअप";
+"lang.prompt" = "भाषा बदलने के लिए कुंजी दबाएँ\n(उदा.: दायाँ Alt, दायाँ Ctrl)";
+"lang.waiting" = "कुंजी इनपुट की प्रतीक्षा...";
+"lang.skip" = "छोड़ें";
+
+/* App Delegate */
+"app.error.title" = "WinKeys त्रुटि";
+"app.error.message" = "कीबोर्ड इवेंट लिसनर शुरू नहीं हो सका।\nकृपया सिस्टम सेटिंग्स > गोपनीयता और सुरक्षा > एक्सेसिबिलिटी में अनुमतियाँ जाँचें।";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "विंडो बंद करें";
+"macos.hideApp" = "ऐप छुपाएँ";
+"macos.minimize" = "छोटा करें";
+"macos.newWindow" = "नई विंडो";
+"macos.saveAs" = "इस रूप में सहेजें";
+"macos.hideOtherApps" = "अन्य ऐप छुपाएँ";
+"macos.inputSourceToggle" = "इनपुट स्रोत बदलें";
+"macos.fullScreen" = "पूर्ण स्क्रीन";
+"macos.moveToTrash" = "ट्रैश में डालें";
+"macos.getInfo" = "जानकारी प्राप्त करें";
+"macos.duplicate" = "डुप्लिकेट";
+"macos.export" = "निर्यात";
+"macos.addressBarGo" = "एड्रेस बार / जाएँ";
+"macos.areaScreenshot" = "क्षेत्र स्क्रीनशॉट";
+"macos.existingShortcut" = "मौजूदा शॉर्टकट";

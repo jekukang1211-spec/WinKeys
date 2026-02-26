@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "โหมดปัจจุบัน: Windows";
+"menu.currentMode.mac" = "โหมดปัจจุบัน: Mac";
+"menu.switchWindows" = "สลับเป็นโหมด Windows";
+"menu.switchMac" = "สลับเป็นโหมด Mac";
+"menu.settings" = "ตั้งค่าปุ่มลัด...";
+"menu.launchAtLogin" = "เปิดเมื่อเข้าสู่ระบบ";
+"menu.quit" = "ออกจาก WinKeys";
+"menu.language" = "ภาษา";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - ตั้งค่าปุ่มลัด";
+"editor.editPrompt" = "เปิดโหมดแก้ไขเพื่อทำการเปลี่ยนแปลง";
+"editor.resetAll" = "รีเซ็ตทั้งหมด";
+"editor.editEnable" = "เปิดโหมดแก้ไข";
+"editor.editLock" = "ล็อกโหมดแก้ไข";
+"editor.editWarning" = "⚠ ตรวจสอบว่าปุ่มลัดไม่ขัดแย้งกับปุ่มลัด macOS ที่มีอยู่";
+"editor.column.desc" = "ฟังก์ชัน";
+"editor.column.input" = "ปุ่มลัด Windows";
+"editor.column.output" = "ปุ่มลัด Mac";
+"editor.change" = "เปลี่ยน";
+
+/* Categories */
+"category.clipboard" = "คลิปบอร์ด / แก้ไข";
+"category.file" = "ไฟล์ / เอกสาร";
+"category.browser" = "เบราว์เซอร์ / แท็บ";
+"category.format" = "การจัดรูปแบบ";
+"category.system" = "ระบบ";
+"category.screenshot" = "ภาพหน้าจอ";
+"category.navigation" = "การนำทาง";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "คัดลอก";
+"action.paste" = "วาง";
+"action.cut" = "ตัด";
+"action.undo" = "เลิกทำ";
+"action.redo" = "ทำซ้ำ";
+"action.selectAll" = "เลือกทั้งหมด";
+"action.save" = "บันทึก";
+"action.new" = "สร้างใหม่";
+"action.open" = "เปิด";
+"action.print" = "พิมพ์";
+"action.find" = "ค้นหา";
+"action.findReplace" = "ค้นหาและแทนที่";
+"action.newTab" = "แท็บใหม่";
+"action.closeTab" = "ปิดแท็บ";
+"action.restoreTab" = "กู้คืนแท็บที่ปิด";
+"action.refresh" = "รีเฟรช";
+"action.refreshF5" = "รีเฟรช (F5)";
+"action.addressBar" = "แถบที่อยู่";
+"action.bold" = "ตัวหนา";
+"action.italic" = "ตัวเอียง";
+"action.underline" = "ขีดเส้นใต้";
+"action.appSwitch" = "สลับแอป";
+"action.appQuit" = "ออกจากแอป";
+"action.forceQuit" = "บังคับออก";
+"action.lockScreen" = "ล็อกหน้าจอ";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "ภาพหน้าจอทั้งหมด";
+"action.screenshotWindow" = "จับภาพหน้าต่าง";
+"action.screenshotArea" = "เลือกพื้นที่";
+"action.screenshotTool" = "เครื่องมือภาพหน้าจอ";
+"action.lineStart" = "ต้นบรรทัด";
+"action.lineEnd" = "ท้ายบรรทัด";
+"action.wordLeft" = "คำซ้าย";
+"action.wordRight" = "คำขวา";
+"action.wordDelete" = "ลบคำ";
+"action.rename" = "เปลี่ยนชื่อ";
+"action.trash" = "ถังขยะ";
+"action.parentFolder" = "โฟลเดอร์หลัก";
+"action.fileInfo" = "ข้อมูลไฟล์";
+"action.languageToggle" = "สลับภาษา";
+"action.inputSourceToggle" = "สลับแหล่งป้อนข้อมูล";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "คืนค่าเริ่มต้นทั้งหมด";
+"alert.restoreDefaults.message" = "ลบการตั้งค่าปุ่มลัดที่กำหนดเองทั้งหมดและคืนค่าเริ่มต้น";
+"alert.restoreDefaults.confirm" = "คืนค่าเริ่มต้น";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "ยกเลิก";
+"alert.confirm" = "ตกลง";
+"alert.set" = "ตั้งค่า";
+"alert.reenter" = "ป้อนใหม่";
+"alert.change" = "เปลี่ยน";
+"alert.default" = "ค่าเริ่มต้น";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "กดปุ่มลัดป้อนข้อมูลใหม่สำหรับ [%1$@]\n\nปัจจุบัน: %2$@";
+"alert.recorder.macPrompt" = "กดปุ่มลัด Mac ใหม่สำหรับ [%1$@]\n\nปัจจุบัน: %2$@";
+"alert.recorder.inputRecording" = "กดปุ่มป้อนข้อมูลใหม่สำหรับ [%1$@]\n\nกำลังบันทึก: %2$@";
+"alert.recorder.macRecording" = "กดปุ่ม Mac ใหม่สำหรับ [%1$@]\n\nกำลังบันทึก: %2$@";
+"alert.recorder.langRecording" = "กดปุ่มสลับภาษาใหม่สำหรับ [%1$@]\n\nกำลังบันทึก: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "ยืนยันปุ่มลัดป้อนข้อมูล";
+"alert.shortcutConfirm.macTitle" = "ยืนยันปุ่มลัด Mac";
+"alert.shortcutConfirm.inputMessage" = "ตั้งปุ่มลัดป้อนข้อมูลของ [%1$@] เป็น\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "ตั้งปุ่มลัด Mac ของ [%1$@] เป็น\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "ยืนยันปุ่มสลับภาษา";
+"alert.langKey.message" = "ตั้งปุ่มสลับภาษาเป็น\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "ข้อผิดพลาดปุ่มลัด";
+"alert.shortcutError.message" = "ไม่สามารถตั้งปุ่มลัดด้วยปุ่มตัวปรับแต่งเพียงอย่างเดียว\nกรุณาใส่ปุ่มปกติอย่างน้อยหนึ่งปุ่ม";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "ปุ่มลัดขัดแย้ง";
+"alert.conflict.message" = "ปุ่มลัดนี้ถูกใช้โดย [%@] แล้ว\nกรุณาเลือกปุ่มลัดอื่น";
+"alert.macConflict.title" = "ขัดแย้งกับปุ่มลัด macOS";
+"alert.macConflict.message" = "ปุ่มลัดนี้ขัดแย้งกับ [%@] ของ macOS\nยังต้องการเปลี่ยนหรือไม่?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - ตั้งค่าปุ่มสลับภาษา";
+"lang.prompt" = "กดปุ่มเพื่อสลับภาษา\n(เช่น: Alt ขวา, Ctrl ขวา)";
+"lang.waiting" = "รอการป้อนข้อมูล...";
+"lang.skip" = "ข้าม";
+
+/* App Delegate */
+"app.error.title" = "ข้อผิดพลาด WinKeys";
+"app.error.message" = "ไม่สามารถเริ่มตัวรับเหตุการณ์แป้นพิมพ์\nกรุณาตรวจสอบสิทธิ์ในการตั้งค่าระบบ > ความเป็นส่วนตัวและความปลอดภัย > การช่วยการเข้าถึง";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "ปิดหน้าต่าง";
+"macos.hideApp" = "ซ่อนแอป";
+"macos.minimize" = "ย่อ";
+"macos.newWindow" = "หน้าต่างใหม่";
+"macos.saveAs" = "บันทึกเป็น";
+"macos.hideOtherApps" = "ซ่อนแอปอื่น";
+"macos.inputSourceToggle" = "สลับแหล่งป้อนข้อมูล";
+"macos.fullScreen" = "เต็มหน้าจอ";
+"macos.moveToTrash" = "ย้ายไปถังขยะ";
+"macos.getInfo" = "ข้อมูล";
+"macos.duplicate" = "ทำซ้ำ";
+"macos.export" = "ส่งออก";
+"macos.addressBarGo" = "แถบที่อยู่ / ไป";
+"macos.areaScreenshot" = "จับภาพพื้นที่";
+"macos.existingShortcut" = "ปุ่มลัดที่มีอยู่";

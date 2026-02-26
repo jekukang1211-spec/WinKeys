@@ -1,0 +1,142 @@
+/* Menu Bar */
+"menu.currentMode.windows" = "Mode saat ini: Windows";
+"menu.currentMode.mac" = "Mode saat ini: Mac";
+"menu.switchWindows" = "Beralih ke mode Windows";
+"menu.switchMac" = "Beralih ke mode Mac";
+"menu.settings" = "Pengaturan pintasan...";
+"menu.launchAtLogin" = "Jalankan saat login";
+"menu.quit" = "Keluar dari WinKeys";
+"menu.language" = "Bahasa";
+
+/* Mapping Editor UI */
+"editor.windowTitle" = "WinKeys - Pengaturan pintasan";
+"editor.editPrompt" = "Aktifkan mode edit untuk melakukan perubahan";
+"editor.resetAll" = "Atur ulang semua";
+"editor.editEnable" = "Aktifkan mode edit";
+"editor.editLock" = "Kunci mode edit";
+"editor.editWarning" = "⚠ Pastikan pintasan tidak bertentangan dengan pintasan macOS yang ada";
+"editor.column.desc" = "Fungsi";
+"editor.column.input" = "Pintasan Windows";
+"editor.column.output" = "Pintasan Mac";
+"editor.change" = "Ubah";
+
+/* Categories */
+"category.clipboard" = "Papan klip / Edit";
+"category.file" = "File / Dokumen";
+"category.browser" = "Browser / Tab";
+"category.format" = "Pemformatan";
+"category.system" = "Sistem";
+"category.screenshot" = "Tangkapan layar";
+"category.navigation" = "Navigasi";
+"category.finder" = "Finder";
+
+/* Action Descriptions */
+"action.copy" = "Salin";
+"action.paste" = "Tempel";
+"action.cut" = "Potong";
+"action.undo" = "Urungkan";
+"action.redo" = "Ulangi";
+"action.selectAll" = "Pilih semua";
+"action.save" = "Simpan";
+"action.new" = "Baru";
+"action.open" = "Buka";
+"action.print" = "Cetak";
+"action.find" = "Cari";
+"action.findReplace" = "Cari dan ganti";
+"action.newTab" = "Tab baru";
+"action.closeTab" = "Tutup tab";
+"action.restoreTab" = "Pulihkan tab yang ditutup";
+"action.refresh" = "Muat ulang";
+"action.refreshF5" = "Muat ulang (F5)";
+"action.addressBar" = "Bilah alamat";
+"action.bold" = "Tebal";
+"action.italic" = "Miring";
+"action.underline" = "Garis bawah";
+"action.appSwitch" = "Beralih aplikasi";
+"action.appQuit" = "Keluar aplikasi";
+"action.forceQuit" = "Paksa keluar";
+"action.lockScreen" = "Kunci layar";
+"action.spotlight" = "Spotlight";
+"action.missionControl" = "Mission Control";
+"action.screenshotFull" = "Tangkapan layar penuh";
+"action.screenshotWindow" = "Tangkapan jendela";
+"action.screenshotArea" = "Pilih area";
+"action.screenshotTool" = "Alat tangkapan layar";
+"action.lineStart" = "Awal baris";
+"action.lineEnd" = "Akhir baris";
+"action.wordLeft" = "Kata ke kiri";
+"action.wordRight" = "Kata ke kanan";
+"action.wordDelete" = "Hapus kata";
+"action.rename" = "Ganti nama";
+"action.trash" = "Tong sampah";
+"action.parentFolder" = "Folder induk";
+"action.fileInfo" = "Info file";
+"action.languageToggle" = "Ganti bahasa";
+"action.inputSourceToggle" = "Ganti sumber input";
+
+/* Alerts - Restore Defaults */
+"alert.restoreDefaults.title" = "Pulihkan semua default";
+"alert.restoreDefaults.message" = "Hapus semua pengaturan pintasan kustom dan pulihkan default.";
+"alert.restoreDefaults.confirm" = "Pulihkan";
+
+/* Alerts - Common Buttons */
+"alert.cancel" = "Batal";
+"alert.confirm" = "OK";
+"alert.set" = "Atur";
+"alert.reenter" = "Masukkan ulang";
+"alert.change" = "Ubah";
+"alert.default" = "Default";
+
+/* Alerts - Key Recorder */
+"alert.recorder.inputPrompt" = "Tekan pintasan input baru untuk [%1$@]\n\nSaat ini: %2$@";
+"alert.recorder.macPrompt" = "Tekan pintasan Mac baru untuk [%1$@]\n\nSaat ini: %2$@";
+"alert.recorder.inputRecording" = "Tekan tombol input baru untuk [%1$@]\n\nMerekam: %2$@";
+"alert.recorder.macRecording" = "Tekan tombol Mac baru untuk [%1$@]\n\nMerekam: %2$@";
+"alert.recorder.langRecording" = "Tekan tombol bahasa baru untuk [%1$@]\n\nMerekam: %2$@";
+
+/* Alerts - Shortcut Confirmation */
+"alert.shortcutConfirm.inputTitle" = "Konfirmasi pintasan input";
+"alert.shortcutConfirm.macTitle" = "Konfirmasi pintasan Mac";
+"alert.shortcutConfirm.inputMessage" = "Atur pintasan input [%1$@] menjadi\n%2$@?";
+"alert.shortcutConfirm.macMessage" = "Atur pintasan Mac [%1$@] menjadi\n%2$@?";
+
+/* Alerts - Language Key */
+"alert.langKey.title" = "Konfirmasi tombol bahasa";
+"alert.langKey.message" = "Atur tombol ganti bahasa menjadi\n%@?";
+
+/* Alerts - Shortcut Error */
+"alert.shortcutError.title" = "Kesalahan pintasan";
+"alert.shortcutError.message" = "Tidak dapat mengatur pintasan hanya dengan tombol pengubah.\nSertakan setidaknya satu tombol biasa.";
+
+/* Alerts - Conflict */
+"alert.conflict.title" = "Konflik pintasan";
+"alert.conflict.message" = "Pintasan ini sudah digunakan oleh [%@].\nSilakan pilih pintasan lain.";
+"alert.macConflict.title" = "Konflik dengan pintasan macOS";
+"alert.macConflict.message" = "Pintasan ini bertentangan dengan [%@] macOS.\nTetap ubah?";
+
+/* Language Key Recorder */
+"lang.windowTitle" = "WinKeys - Pengaturan tombol bahasa";
+"lang.prompt" = "Tekan tombol untuk mengganti bahasa\n(contoh: Alt kanan, Ctrl kanan)";
+"lang.waiting" = "Menunggu input...";
+"lang.skip" = "Lewati";
+
+/* App Delegate */
+"app.error.title" = "Kesalahan WinKeys";
+"app.error.message" = "Tidak dapat memulai pendengar event keyboard.\nPeriksa izin di Pengaturan Sistem > Privasi & Keamanan > Aksesibilitas.";
+
+/* macOS Shortcut Names */
+"macos.closeWindow" = "Tutup jendela";
+"macos.hideApp" = "Sembunyikan aplikasi";
+"macos.minimize" = "Perkecil";
+"macos.newWindow" = "Jendela baru";
+"macos.saveAs" = "Simpan sebagai";
+"macos.hideOtherApps" = "Sembunyikan aplikasi lain";
+"macos.inputSourceToggle" = "Ganti sumber input";
+"macos.fullScreen" = "Layar penuh";
+"macos.moveToTrash" = "Pindahkan ke tong sampah";
+"macos.getInfo" = "Dapatkan info";
+"macos.duplicate" = "Duplikat";
+"macos.export" = "Ekspor";
+"macos.addressBarGo" = "Bilah alamat / Pergi";
+"macos.areaScreenshot" = "Tangkapan area";
+"macos.existingShortcut" = "Pintasan yang ada";
