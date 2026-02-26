@@ -2,3 +2,11 @@
 .swiftpm/
 *.xcodeproj/
 DerivedData/
+WinKeys.app/
+
+# Website
+website/node_modules/
+website/.next/
+website/feedback/
+website/.env.local
+.DS_Store
