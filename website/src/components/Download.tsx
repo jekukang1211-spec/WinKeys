@@ -22,7 +22,7 @@ export default function Download() {
               href={DOWNLOAD_URL}
               className="inline-block bg-[#0078D4] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#005A9E] transition-colors"
             >
-              Download WinKeys.zip
+              Download WinKeys_{APP_VERSION}.zip
             </a>
           </div>
         </div>
