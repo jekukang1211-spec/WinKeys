@@ -25,6 +25,11 @@ cp "${BUILD_DIR}/${APP_NAME}" "${MACOS_DIR}/${APP_NAME}"
 # Copy Info.plist
 cp "Resources/Info.plist" "${CONTENTS_DIR}/Info.plist"
 
+# Copy localization resources
+for lproj in Sources/WinKeysLib/Resources/*.lproj; do
+    cp -R "$lproj" "${RESOURCES_DIR}/"
+done
+
 # Ad-hoc 코드 서명
 codesign -s - -f "${APP_BUNDLE}" 2>/dev/null
 
